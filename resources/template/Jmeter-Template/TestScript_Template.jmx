@@ -27,7 +27,7 @@
       </ThreadGroup>
       <hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Pre Test Actions" enabled="true">
-          <stringProp name="TestPlan.comments">Any Prerequisites that needs to be set before running the tests</stringProp>
+          <stringProp name="TestPlan.comments">Any Prerequisites that needs to be set before running the tests - These will not be included in the Report</stringProp>
         </GenericController>
         <hashTree>
           <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Jmeter Parameter Setter" enabled="true">
@@ -36,6 +36,7 @@
             <stringProp name="parameters"></stringProp>
             <stringProp name="script"></stringProp>
             <stringProp name="scriptLanguage">beanshell</stringProp>
+            <stringProp name="TestPlan.comments">==DO NOT CHANGE==Setting server.properties as Jmeter properties</stringProp>
           </JSR223Sampler>
           <hashTree/>
         </hashTree>
@@ -60,7 +61,7 @@
             <stringProp name="filename">resources/clients/ResultFinalizer.bsh</stringProp>
             <stringProp name="cacheKey"></stringProp>
             <stringProp name="script"></stringProp>
-            <stringProp name="TestPlan.comments">The Result Finalizer Script, this appends all te results to a log file</stringProp>
+            <stringProp name="TestPlan.comments">==DO NOT CHANGE==The Result Finalizer Script, this appends all te results to a log file.</stringProp>
           </JSR223Sampler>
           <hashTree/>
         </hashTree>
