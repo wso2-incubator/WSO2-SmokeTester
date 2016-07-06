@@ -9,20 +9,21 @@ SampleResult prev_result=ctx.getPreviousResult();
 //<Thread_groupName>,<SamplerLabel>,<SamplerStatus>,<ResponseCode/Error><Response Message>,<RequestInformation>,<getResponseCode()><AssertionInformato>
 
 String resultString;
+String breakdelimeter = "<-brk->";
 
 //print("running :::::::::::::: " +prev_result.getResponseCode());
 if (prev_result !=  null) {
 
 	// Appending the Thread Group name and the Sampler Label
-	resultString = JMeterContextService.getContext().getThreadGroup().getName()+ "," + prev_result.getSampleLabel()+",";
+	resultString = JMeterContextService.getContext().getThreadGroup().getName()+ breakdelimeter + prev_result.getSampleLabel()+breakdelimeter;
 
 	if(prev_result.isSuccessful()){
-		resultString = resultString+"Successful,"+prev_result.getResponseCode()+","+"Response Not Shown!!,";
+		resultString = resultString+"Successful"+breakdelimeter+prev_result.getResponseCode()+breakdelimeter+"Response Not Shown!!" +breakdelimeter;
 		} else {
-			resultString = resultString+"Error,"+prev_result.getResponseCode()+","+prev_result.getResponseDataAsString()+",";
+			resultString = resultString+"Error"+breakdelimeter+prev_result.getResponseCode()+breakdelimeter+prev_result.getResponseDataAsString()+breakdelimeter;
 			}
 	//Appending Response Message
-	//resultString = resultString+prev_result.getResponseMessage()+",";
+	//resultString = resultString+prev_result.getResponseMessage()+breakdelimeter;
 
 	//Get Sampler Data
 	resultString = resultString+prev_result.getSamplerData()+"####";
@@ -35,11 +36,11 @@ if (prev_result !=  null) {
      String results = vars.get("results");
 
 	// Appending Results to the global Jmeter Variable
-     if(!results.startsWith("null")){
-     vars.put("results",results+resultString);
-     }else {
-     	vars.put("results",resultString);
-     	//print("IN THE ELSEEEEEEEEEEEEEEEE");
-     	}
+	if(results==null){
+	     	//print("IN NULLLL");
+	     	vars.put("results",resultString);
+	} else {
+	vars.put("results",results+resultString);
+	}
 }
 else print("prev_result is null");
