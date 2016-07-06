@@ -15,6 +15,7 @@ public class HTMLReportGenerator {
         String htmlReportLocation = "target/reports/html/index.html";
         String finalTableString = "";
         String dashboardJSLocation = "target/reports/html/content/js/dashboard.js";
+        String breakdelimeter = "<-brk->";
 
         // Counter to count success counts
         int successCount = 0;
@@ -48,7 +49,7 @@ public class HTMLReportGenerator {
                 System.out.println("Result Set is Empty, Hence Continuing!!");
                 continue;
             }
-            samplerString = resultString1[i].split(",");
+            samplerString = resultString1[i].split(breakdelimeter);
 
             if (samplerString[2].equals("Successful")){
                 successCount++;
