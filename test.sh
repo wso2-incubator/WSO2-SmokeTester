@@ -8,7 +8,7 @@ if [ "$JMETER_HOME" == "" ];then
 fi
 
 # Location of the test scripts ATM this is Hardcoded for ESB 4.9.0. The script should be improved to accept commandline params to parse product name and version
-scriptlocation="resources/testscripts/ESB/4.9.0"
+scriptlocation="resources/testscripts/ESB/4.9.0/Scripts"
 # Report saving location
 reporttarget="target/reports"
 # Clean the target when running
