@@ -8,6 +8,10 @@ import java.nio.file.Paths;
 public class HTMLReportGenerator {
     public static void main(String[] args){
         // Can parse commadling arguments for the Product type and the version
+        if (args.length!=2){
+            System.out.println("Invalid Number of Arguments : " +args.length);
+            System.exit(0);
+        }
 
         // Reading the Result File
         String jmterLogLocation = "target/logs/result.log";
@@ -102,6 +106,8 @@ public class HTMLReportGenerator {
             String finalReport = new String(Files.readAllBytes(Paths.get(htmlReportLocation)));
             finalReport = finalReport.replace("${content}",finalTableString);
             finalReport = finalReport.replace("${resultsummarytable}",summaryTable);
+            finalReport = finalReport.replace("${ProductName}",args[0]);
+            finalReport = finalReport.replace("${ProductVersion}",args[1]);
 
             // Writing to the File
             Files.write(Paths.get(htmlReportLocation), finalReport.getBytes());
@@ -116,6 +122,6 @@ public class HTMLReportGenerator {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println("\n\nTest Run Result Summary\n\nSuccessful Sampler Clount  : " +successCount + " \nSampler Failures : "+FailureCount);
+        System.out.println("\nTest Run Result Summary\n\nSuccessful Sampler Clount  : " +successCount + " \nSampler Failures : "+FailureCount);
     }
 }
