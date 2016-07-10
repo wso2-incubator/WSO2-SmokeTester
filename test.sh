@@ -45,4 +45,4 @@ echo "Test Runs are Over!!"
 # cp resources/clients/HTMLReportGenerator.java target/javaclasses
 echo -e "Generating the Report!!!\n"
 javac -d target/javaclasses resources/clients/HTMLReportGenerator.java
-java -cp target/javaclasses HTMLReportGenerator
+java -cp target/javaclasses HTMLReportGenerator ESB 4.9.0
