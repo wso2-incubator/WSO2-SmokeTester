@@ -94,23 +94,11 @@
                 <stringProp name="Argument.desc">Name of the endpoint</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
-              <elementProp name="EndpointURL" elementType="Argument">
-                <stringProp name="Argument.name">EndpointURL</stringProp>
-                <stringProp name="Argument.value">http://192.168.48.231:9781/services/InfoParser/</stringProp>
-                <stringProp name="Argument.desc">URL of the endpoint</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
               <elementProp name="SourceURLEntryName" elementType="Argument">
                 <stringProp name="Argument.name">SourceURLEntryName</stringProp>
                 <stringProp name="Argument.value">ESB490proxy_wsdl</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <stringProp name="Argument.desc">Name of the source URL entry</stringProp>
-              </elementProp>
-              <elementProp name="SourceURLEntryURL" elementType="Argument">
-                <stringProp name="Argument.name">SourceURLEntryURL</stringProp>
-                <stringProp name="Argument.value">http://192.168.48.231:9781/services/InfoParser?wsdl</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <stringProp name="Argument.desc">URL of the source URL entry</stringProp>
               </elementProp>
               <elementProp name="TextEntryName" elementType="Argument">
                 <stringProp name="Argument.name">TextEntryName</stringProp>
@@ -302,7 +290,7 @@
                     <elementProp name="url" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">url</stringProp>
-                      <stringProp name="Argument.value">${EndpointURL}</stringProp>
+                      <stringProp name="Argument.value">${backend_host_port}/services/InfoParser/</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
@@ -623,7 +611,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                     <elementProp name="Value" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">Value</stringProp>
-                      <stringProp name="Argument.value">${SourceURLEntryURL}</stringProp>
+                      <stringProp name="Argument.value">${backend_host_port}/services/InfoParser?wsdl</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
