@@ -90,7 +90,7 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="cAppName" elementType="Argument">
                 <stringProp name="Argument.name">cAppName</stringProp>
-                <stringProp name="Argument.value">Service_Chaining.car</stringProp>
+                <stringProp name="Argument.value">Service_Chaining</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <stringProp name="Argument.desc">Name of the cApp</stringProp>
               </elementProp>
