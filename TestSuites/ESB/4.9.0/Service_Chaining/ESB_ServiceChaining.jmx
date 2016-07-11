@@ -315,7 +315,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                   <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                     <collectionProp name="Arguments.arguments"/>
                   </elementProp>
-                  <stringProp name="SoapSampler.URL_DATA">http://${service_host}/services/LicenseServiceProxy</stringProp>
+                  <stringProp name="SoapSampler.URL_DATA">http://${service_host}:${http_serviceport}/services/LicenseServiceProxy</stringProp>
                   <stringProp name="HTTPSamper.xml_data">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:sam=&quot;http://sample.esb.org&quot;&gt;
    &lt;soapenv:Header/&gt;
    &lt;soapenv:Body&gt;
@@ -358,7 +358,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                   <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                     <collectionProp name="Arguments.arguments"/>
                   </elementProp>
-                  <stringProp name="SoapSampler.URL_DATA">https://${service_host}/services/LicenseServiceProxy</stringProp>
+                  <stringProp name="SoapSampler.URL_DATA">https://${service_host}:${https_serviceport}/services/LicenseServiceProxy</stringProp>
                   <stringProp name="HTTPSamper.xml_data">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:sam=&quot;http://sample.esb.org&quot;&gt;
    &lt;soapenv:Header/&gt;
    &lt;soapenv:Body&gt;
