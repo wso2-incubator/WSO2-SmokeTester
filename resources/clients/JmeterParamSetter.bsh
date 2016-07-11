@@ -18,7 +18,7 @@ String filePath = new File("").getAbsolutePath();
 		for(String key : properties.stringPropertyNames()) {
  			String value = properties.getProperty(key);
  			vars.put(key,value);
-  			 System.out.println("Property Set : " +key + " => " + value);
+  			 //System.out.println("Property Set : " +key + " => " + value);
 		}
 
 	}catch(Exception e) {
