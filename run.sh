@@ -104,6 +104,12 @@ if [ "$1" == "help" ];then
 	help_message
 fi
 
+if [ "$1" == "clean" ];then
+	log "INFO" "Cleaning the target directory"
+	rm -rf target
+	exit
+fi
+
 log "INFO" "Starting WSO2 Smoke Tester"
 clean_setup
 
@@ -141,3 +147,5 @@ elif [ "$PRODUCT" != "" ] && [ "$VERSION" != "" ] && [ "$SCRIPT" != "" ]; then
 	log "INFO" "Running $SCRIPT in $PRODUCT $VERSION"
 	log "ERROR" "Individual script running is Not Suported in this version of WSO2 Smoke Tester"
 fi
+
+log "INFO" "WSO2 Smoke Tester tests completed"
