@@ -1,4 +1,4 @@
-t Script Name** - MessageStore_and_Forward.jmx
+- **Script Name** - MessageStore_and_Forward.jmx
 - **Product Name & Version** -  Enterprise Service Bus - 4.9.0
 - **Author** - Yasassri Ratnayake
 - **Created Date** --08/07/2016
