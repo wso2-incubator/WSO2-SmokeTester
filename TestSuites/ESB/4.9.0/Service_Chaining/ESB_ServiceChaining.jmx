@@ -104,7 +104,7 @@
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -152,7 +152,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -201,7 +201,7 @@
                   </collectionProp>
                 </elementProp>
                 <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
                 <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -230,7 +230,7 @@
                   <collectionProp name="Arguments.arguments"/>
                 </elementProp>
                 <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
                 <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -251,7 +251,7 @@
                   <collectionProp name="Arguments.arguments"/>
                 </elementProp>
                 <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
                 <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -425,7 +425,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                     </collectionProp>
                   </elementProp>
                   <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-                  <stringProp name="HTTPSampler.port"></stringProp>
+                  <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
                   <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                   <stringProp name="HTTPSampler.response_timeout"></stringProp>
                   <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -453,7 +453,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                     </collectionProp>
                   </elementProp>
                   <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-                  <stringProp name="HTTPSampler.port"></stringProp>
+                  <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
                   <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                   <stringProp name="HTTPSampler.response_timeout"></stringProp>
                   <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -473,7 +473,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                     <collectionProp name="Arguments.arguments"/>
                   </elementProp>
                   <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-                  <stringProp name="HTTPSampler.port"></stringProp>
+                  <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
                   <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                   <stringProp name="HTTPSampler.response_timeout"></stringProp>
                   <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -517,7 +517,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
