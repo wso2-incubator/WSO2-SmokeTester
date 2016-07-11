@@ -11,7 +11,8 @@ This script covers message store and forward scenario where following message ro
 Ref : https://docs.wso2.com/display/ESB490/Store+and+Forward+Using+JMS+Message+Stores
 
 #### How to Execute 
-- **Pre-requisites** 
+
+##### Pre-requisites
 
 - Set the Following Parameters in server.properties file for this to work
 ```sh
