@@ -13,7 +13,7 @@ Ref : https://docs.wso2.com/display/ESB490/Store+and+Forward+Using+JMS+Message+S
 #### How to Execute 
 - **Pre-requisites** 
 
-Need to Set the Following Parameters in server.prfor this to work
+- Set the Following Parameters in server.properties file for this to work
 ```sh
 // Active MQ endpoint address in the following Format
 activemq_ep	tcp://192.168.48.231:61616
@@ -28,5 +28,7 @@ password	admin
 mgt_https_port	9443	
 http_serviceport	8280	
 ````
+- Copy ActiveMQ dependency Jars to WSO2 server.
+- Deploy the Backend Service.
 
 After Setting the above Params and deploying the Backend service run the tool.
