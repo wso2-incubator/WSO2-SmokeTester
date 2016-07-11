@@ -134,8 +134,8 @@ if [ "$PRODUCT" != "" ] && [ "$VERSION" != "" ] && [ "$SCRIPT" == "" ]; then
 	log "INFO" "Running tests for $PRODUCT $VERSION"
 	if [ -d "$ARTEFACT_LOCATION/$PRODUCT/$VERSION" ]; then
 		log "INFO" "Artefacts found for testing"
-		get_jmx
-		get_artefacts
+		get_jmx $PRODUCT $VERSION
+		get_artefacts $PRODUCT $VERSION
 		sleep 5
 		run_tests
 		generate_report $PRODUCT $VERSION
