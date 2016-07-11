@@ -122,6 +122,7 @@ public class HTMLReportGenerator {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println("\nTest Run Result Summary\n\nSuccessful Sampler Clount  : " +successCount + " \nSampler Failures : "+FailureCount);
+
+        System.out.println("\nTest Run Result Summary\n\nSuccessful Sampler Count  : " +successCount + " \nSampler Failures : "+FailureCount);
     }
 }
