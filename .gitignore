@@ -3,7 +3,7 @@
 
 .idea
 target
-resources/testscripts/*
+#resources/testscripts/*
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
