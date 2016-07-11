@@ -1,7 +1,9 @@
 *.class
+*.log
 
 .idea
 target
+#resources/testscripts/*
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/

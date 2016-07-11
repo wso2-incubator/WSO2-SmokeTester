@@ -12,20 +12,21 @@ import org.apache.jmeter.threads.JMeterContextService;
 	try{
 	File file = new File(resultLogLocation);
 
-		// if file doesnt exists, then create it
+		// if file doesn't exist, then create it
 		if (!file.exists()) {
 				print("Creating a new log file");
 				file.createNewFile();
 			}
+		// Append logs if already logs available
 		FileWriter fw = new FileWriter(file.getAbsoluteFile(),true);
 		BufferedWriter bw = new BufferedWriter(fw);
+		if(vars.get("results") != null){
 		bw.write(vars.get("results"));
+		}
 		bw.close();
 
 	} catch(Exception e){
-	print("Error while writing the result file : "+e.getMessage());
-	}
 
-	//print(":::::: The Final Result Set :::::");
-	//print(vars.get("results"));
-	//print(":::::: The Final Result Set ::::: END :::::");
+	print("Error while writing the result file : "+e.getMessage());
+
+	}

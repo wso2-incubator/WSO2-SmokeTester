@@ -8,6 +8,10 @@ import java.nio.file.Paths;
 public class HTMLReportGenerator {
     public static void main(String[] args){
         // Can parse commadling arguments for the Product type and the version
+        if (args.length!=2){
+            System.out.println("Invalid Number of Arguments : " +args.length);
+            System.exit(0);
+        }
 
         // Reading the Result File
         String jmterLogLocation = "target/logs/result.log";
@@ -15,6 +19,7 @@ public class HTMLReportGenerator {
         String htmlReportLocation = "target/reports/html/index.html";
         String finalTableString = "";
         String dashboardJSLocation = "target/reports/html/content/js/dashboard.js";
+        String breakdelimeter = "<-brk->";
 
         // Counter to count success counts
         int successCount = 0;
@@ -48,7 +53,7 @@ public class HTMLReportGenerator {
                 System.out.println("Result Set is Empty, Hence Continuing!!");
                 continue;
             }
-            samplerString = resultString1[i].split(",");
+            samplerString = resultString1[i].split(breakdelimeter);
 
             if (samplerString[2].equals("Successful")){
                 successCount++;
@@ -101,6 +106,8 @@ public class HTMLReportGenerator {
             String finalReport = new String(Files.readAllBytes(Paths.get(htmlReportLocation)));
             finalReport = finalReport.replace("${content}",finalTableString);
             finalReport = finalReport.replace("${resultsummarytable}",summaryTable);
+            finalReport = finalReport.replace("${ProductName}",args[0]);
+            finalReport = finalReport.replace("${ProductVersion}",args[1]);
 
             // Writing to the File
             Files.write(Paths.get(htmlReportLocation), finalReport.getBytes());
@@ -115,6 +122,7 @@ public class HTMLReportGenerator {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println("\n\nTest Run Result Summary\n\nSuccessful Sampler Clount  : " +successCount + " \nSampler Failures : "+FailureCount);
+
+        System.out.println("\nTest Run Result Summary\n\nSuccessful Sampler Count  : " +successCount + " \nSampler Failures : "+FailureCount);
     }
 }
