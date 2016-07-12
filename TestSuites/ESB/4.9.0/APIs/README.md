@@ -19,7 +19,7 @@ This script Tests Basic test scenarios related to APIs. This script covers follo
 - Set the Following Parameters in server.properties file for this to work
 ```sh
 
-// Application Server or Tomcat address. Need the following webapp RESTfulService deployed
+// Application Server or Tomcat address. Need the JaxRS Basic webapp deployed
 backend_host_port	http://192.168.48.231:9781	
 
 // Admin Username and password of the management console
