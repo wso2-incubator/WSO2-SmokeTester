@@ -13,6 +13,7 @@
 - Message Endpoint - This EIP covers how an application connects to a messaging channel to send and receive messages
 - Point-to-Point Channel - This EIP covers how the caller can be sure that exactly one receiver will receive the message or perform the call.
 - Data Type Channel EIP - This covers how the application sends a data item such that the receiver will know how to process it. (This also covers how fault messages are handled)
+- Message Bridge EIP -  This covers how multiple messaging systems can be connected so that messages available on one are also available on the others
 
 #### **Test Description** -
 
@@ -60,9 +61,16 @@ Test Details and the pre-conditions relevant for each EIP is described below in 
 Fault Handling scenario is verified using the 'MarketAtivity' Service.
 
  **Pre-requisites** - 
-  *  Start WSO2 Appication Server and add the attached **SimpleStockQuoteServiceVersion1.aar_** and **SimpleStockQuoteServiceVersion2.aar_**  (These two services will pass different headers when invoking the _getQuote_ services)
+  *  Start WSO2 Appication Server and add the attached **SimpleStockQuoteService.aar_** 
  *  Open the attached **_EIP08_DataTypeChannel_1.0.0.car_** file and change the relevant backend server hostname and port in **_EIP08_DataTypeEndpoint-1.0.0.xml_** file
 * Copy **_EIP08_DataTypeChannel_1.0.0.car_** file to _"WSO2-SmokeTester/resources/testscripts/ESB/4.9.0/Artifacts"_ directory
+
+##### **Scenario 08**  - Message Bridge Channel EIP
+
+ **Pre-requisites** - 
+  *  Start WSO2 Appication Server and add the attached **SimpleStockQuoteService.aar_** 
+ *  Open the attached **_EIP09_MessageBridge_1.0.0.car_** file and change the relevant backend server hostname and port in **_MessageTranslate-1.0.0.xml_** file
+* Copy **_EIP09_MessageBridge_1.0.0.car_** file to _"WSO2-SmokeTester/resources/testscripts/ESB/4.9.0/Artifacts"_ directory
 
  **Execute the Scenarios** - 
  1) Configure above mentioned backends and add the ESB artifacts to _"WSO2-SmokeTester/resources/testscripts/ESB/4.9.0/Artifacts"_ location.

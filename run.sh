@@ -86,7 +86,7 @@ function run_tests() {
 	log "INFO" "Starting Tests"
 
 	# Running the Jmeter Scripts
-	for x in $REPORT_LOCATION/runtime/scripts/*.jmx; do
+	for x in $1/*.jmx; do
   		log "INFO" "Running the Script $x"
 		sh $JMETER_HOME/bin/jmeter.sh -n -t $x -l $REPORT_LOCATION/reports/jtl/test.jtl
 	done
@@ -126,8 +126,9 @@ SCRIPT=$s
 
 if [ "$PRODUCT" == "" ] || [ "$VERSION" == "" ]; then
 	log "INFO" "No product or version specified!"
-	log "INFO" "Running default scripts in location [$SCRIPT_LOCATION/runtime/scripts]"
-	# TODO run scripts
+	log "INFO" "Running default scripts in location [testscripts/scripts]"
+	run_tests testscripts/scripts
+	generate_report "NOT-SPECIFIED" "NOT-SPECIFIED"
 fi
 
 if [ "$PRODUCT" != "" ] && [ "$VERSION" != "" ] && [ "$SCRIPT" == "" ]; then
@@ -137,7 +138,7 @@ if [ "$PRODUCT" != "" ] && [ "$VERSION" != "" ] && [ "$SCRIPT" == "" ]; then
 		get_jmx $PRODUCT $VERSION
 		get_artefacts $PRODUCT $VERSION
 		sleep 5
-		run_tests
+		run_tests $REPORT_LOCATION/runtime/scripts
 		generate_report $PRODUCT $VERSION
 	else
 		log "ERROR" "Could not find any artefacts for $PRODUCT $VERSION"
@@ -148,4 +149,4 @@ elif [ "$PRODUCT" != "" ] && [ "$VERSION" != "" ] && [ "$SCRIPT" != "" ]; then
 	log "ERROR" "Individual script running is Not Suported in this version of WSO2 Smoke Tester"
 fi
 
-log "INFO" "WSO2 Smoke Tester tests completed"
+log "INFO" "WSO2 Smoke Tester tests completed, You can find the Test Report at target/reports/html"

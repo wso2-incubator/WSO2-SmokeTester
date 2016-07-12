@@ -67,10 +67,10 @@ public class HTMLReportGenerator {
                             continue;
                     }
                     if (j==5){
-                            finalTableString=finalTableString+"<td>" +samplerString[j]+"</td>";
+                            finalTableString=finalTableString+"<td align=\"left\"><xmp>" +samplerString[j]+"</xmp></td>";
                             continue;
                     }
-                    finalTableString=finalTableString+"<td>" +samplerString[j]+"</td>";
+                    finalTableString=finalTableString+"<td align=\"left\">" +samplerString[j]+"</td>";
                     //print(samplerRersults[j]);
                 }
                 finalTableString=finalTableString+"</tr>";
