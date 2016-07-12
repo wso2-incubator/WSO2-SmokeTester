@@ -2652,7 +2652,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments"/>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
                 <stringProp name="HTTPSampler.port">${https_serviceport}</stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2692,7 +2692,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                     </elementProp>
                   </collectionProp>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
                 <stringProp name="HTTPSampler.port">${https_serviceport}</stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2742,7 +2742,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                     </elementProp>
                   </collectionProp>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
                 <stringProp name="HTTPSampler.port">${https_serviceport}</stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2824,7 +2824,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments"/>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
                 <stringProp name="HTTPSampler.port">${https_serviceport}</stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
