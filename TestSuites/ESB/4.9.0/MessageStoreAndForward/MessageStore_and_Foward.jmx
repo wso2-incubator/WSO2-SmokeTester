@@ -563,7 +563,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="231 /carbon/message_store/index.jsp" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Creating JMS Message Store - carbon/message_store/index.jsp" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -2624,7 +2624,7 @@
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create EP for the Message Processor" enabled="true"/>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="390 /carbon/endpoints/index.jsp" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Creating EPs - Calling /carbon/endpoints/index.jsp" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="region" elementType="HTTPArgument">
@@ -2643,7 +2643,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
               <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2693,11 +2693,11 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="401 /carbon/endpoints/httpEndpoint.jsp" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Creating EPs - Calling  /carbon/endpoints/httpEndpoint.jsp" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
               <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2747,7 +2747,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="415 /carbon/endpoints/updatePages/httpEndpoint-update.jsp" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Creating EPs - Calling endpoints/updatePages/httpEndpoint-update.jsp" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="endpointName" elementType="HTTPArgument">
@@ -2857,7 +2857,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
               <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2911,7 +2911,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="416 /carbon/endpoints/ajaxprocessors/submitEndpoint-ajaxprocessor.jsp" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Creating EPs - Calling endpoints/ajaxprocessors/submitEndpoint-ajaxprocessor.jsp" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="data" elementType="HTTPArgument">
@@ -2923,7 +2923,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
               <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -2974,7 +2974,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="417 /carbon/endpoints/index.jsp" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Creating EPs - Calling carbon/endpoints/index.jsp" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="region" elementType="HTTPArgument">
@@ -3000,7 +3000,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
               <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -3050,7 +3050,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
               <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -3248,16 +3248,18 @@
                     <stringProp name="Argument.name">cron_expression</stringProp>
                     <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="member_count" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">member_count</stringProp>
                     <stringProp name="Argument.value">1</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
               <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -3315,7 +3317,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
               <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -3445,7 +3447,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
               <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -3507,7 +3509,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
               <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -3561,7 +3563,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
               <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -3623,7 +3625,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
               <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -3685,7 +3687,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
               <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -3732,7 +3734,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
               <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -3794,7 +3796,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
               <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -3856,7 +3858,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
               <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -3903,7 +3905,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
               <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -3965,7 +3967,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
               <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -4034,7 +4036,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
               <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -4104,7 +4106,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${service_host}</stringProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
               <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
