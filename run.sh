@@ -149,4 +149,4 @@ elif [ "$PRODUCT" != "" ] && [ "$VERSION" != "" ] && [ "$SCRIPT" != "" ]; then
 	log "ERROR" "Individual script running is Not Suported in this version of WSO2 Smoke Tester"
 fi
 
-log "INFO" "WSO2 Smoke Tester tests completed"
+log "INFO" "WSO2 Smoke Tester tests completed, You can find the Test Report at target/reports/html"
