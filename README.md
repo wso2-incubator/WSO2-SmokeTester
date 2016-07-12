@@ -14,5 +14,6 @@ Please Refer the wiki section for instructions on adding new Jmeter based tests.
 # How to Run
 
 - Clone the Client
-- Open test.sh and set JMETER_HOME parameter. e.g: /home/yasassri/soft/Jmeter/apache-jmeter-3.0
-- Execute the Script. e.g: sh test.sh
+- Configure the required properties in resources/configs/application.properties
+- Execute the Script. e.g: ./run.sh -p [PRODUCT NAME] -v [PRODUCT VERSION]
+	eg: ./run.sh -p ESB -v 4.9.0
