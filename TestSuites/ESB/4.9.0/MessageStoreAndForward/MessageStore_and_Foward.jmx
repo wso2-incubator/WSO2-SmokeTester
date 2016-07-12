@@ -26,6 +26,114 @@
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Global Server Properties" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="mgt_host" elementType="Argument">
+              <stringProp name="Argument.name">mgt_host</stringProp>
+              <stringProp name="Argument.value">localhost</stringProp>
+              <stringProp name="Argument.desc">Host Name of the ESB / LB</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="mgt_https_port" elementType="Argument">
+              <stringProp name="Argument.name">mgt_https_port</stringProp>
+              <stringProp name="Argument.value">9443</stringProp>
+              <stringProp name="Argument.desc">Default sevlet port of the server</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="http_serviceport" elementType="Argument">
+              <stringProp name="Argument.name">http_serviceport</stringProp>
+              <stringProp name="Argument.value">8280</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="https_serviceport" elementType="Argument">
+              <stringProp name="Argument.name">https_serviceport</stringProp>
+              <stringProp name="Argument.value">8243</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="qname" elementType="Argument">
+              <stringProp name="Argument.name">qname</stringProp>
+              <stringProp name="Argument.value">wso2</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="activemq_ep" elementType="Argument">
+              <stringProp name="Argument.name">activemq_ep</stringProp>
+              <stringProp name="Argument.value">tcp://192.168.48.231:61616</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="initial_context_factory" elementType="Argument">
+              <stringProp name="Argument.name">initial_context_factory</stringProp>
+              <stringProp name="Argument.value">org.apache.activemq.jndi.ActiveMQInitialContextFactory</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="con_factory" elementType="Argument">
+              <stringProp name="Argument.name">con_factory</stringProp>
+              <stringProp name="Argument.value">QueueConnectionFactory</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="messagestore_name" elementType="Argument">
+              <stringProp name="Argument.name">messagestore_name</stringProp>
+              <stringProp name="Argument.value">wso2store</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="store_api" elementType="Argument">
+              <stringProp name="Argument.name">store_api</stringProp>
+              <stringProp name="Argument.value">api02</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="store_api_context" elementType="Argument">
+              <stringProp name="Argument.name">store_api_context</stringProp>
+              <stringProp name="Argument.value">/api02</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="username" elementType="Argument">
+              <stringProp name="Argument.name">username</stringProp>
+              <stringProp name="Argument.value">admin</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="password" elementType="Argument">
+              <stringProp name="Argument.name">password</stringProp>
+              <stringProp name="Argument.value">admin</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="port" elementType="Argument">
+              <stringProp name="Argument.name">port</stringProp>
+              <stringProp name="Argument.value">9443</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="service_host" elementType="Argument">
+              <stringProp name="Argument.name">service_host</stringProp>
+              <stringProp name="Argument.value">localhost</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="backend_host_port" elementType="Argument">
+              <stringProp name="Argument.name">backend_host_port</stringProp>
+              <stringProp name="Argument.value">http://192.168.48.231:9781</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="msg_fwd_ep_name" elementType="Argument">
+              <stringProp name="Argument.name">msg_fwd_ep_name</stringProp>
+              <stringProp name="Argument.value">msep01</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="fwd_proc_name" elementType="Argument">
+              <stringProp name="Argument.name">fwd_proc_name</stringProp>
+              <stringProp name="Argument.value">fwdproc</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers"/>
+        </HeaderManager>
+        <hashTree/>
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+          <collectionProp name="CookieManager.cookies"/>
+          <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+          <stringProp name="CookieManager.policy">standard</stringProp>
+          <stringProp name="CookieManager.implementation">org.apache.jmeter.protocol.http.control.HC4CookieHandler</stringProp>
+        </CookieManager>
+        <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Pre Test Actions" enabled="true">
           <stringProp name="TestPlan.comments">Any Prerequisites that needs to be set before running the tests</stringProp>
         </GenericController>
@@ -43,114 +151,6 @@
           <stringProp name="TestPlan.comments">Place All your Test Samplers within This Cimple Controller</stringProp>
         </GenericController>
         <hashTree>
-          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Global Server Properties" enabled="true">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="mgt_host" elementType="Argument">
-                <stringProp name="Argument.name">mgt_host</stringProp>
-                <stringProp name="Argument.value">localhost</stringProp>
-                <stringProp name="Argument.desc">Host Name of the ESB / LB</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="mgt_https_port" elementType="Argument">
-                <stringProp name="Argument.name">mgt_https_port</stringProp>
-                <stringProp name="Argument.value">9443</stringProp>
-                <stringProp name="Argument.desc">Default sevlet port of the server</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="http_serviceport" elementType="Argument">
-                <stringProp name="Argument.name">http_serviceport</stringProp>
-                <stringProp name="Argument.value">8280</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="https_serviceport" elementType="Argument">
-                <stringProp name="Argument.name">https_serviceport</stringProp>
-                <stringProp name="Argument.value">8243</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="qname" elementType="Argument">
-                <stringProp name="Argument.name">qname</stringProp>
-                <stringProp name="Argument.value">wso2</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="activemq_ep" elementType="Argument">
-                <stringProp name="Argument.name">activemq_ep</stringProp>
-                <stringProp name="Argument.value">tcp://192.168.48.231:61616</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="initial_context_factory" elementType="Argument">
-                <stringProp name="Argument.name">initial_context_factory</stringProp>
-                <stringProp name="Argument.value">org.apache.activemq.jndi.ActiveMQInitialContextFactory</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="con_factory" elementType="Argument">
-                <stringProp name="Argument.name">con_factory</stringProp>
-                <stringProp name="Argument.value">QueueConnectionFactory</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="messagestore_name" elementType="Argument">
-                <stringProp name="Argument.name">messagestore_name</stringProp>
-                <stringProp name="Argument.value">wso2store</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="store_api" elementType="Argument">
-                <stringProp name="Argument.name">store_api</stringProp>
-                <stringProp name="Argument.value">api02</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="store_api_context" elementType="Argument">
-                <stringProp name="Argument.name">store_api_context</stringProp>
-                <stringProp name="Argument.value">/api02</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="username" elementType="Argument">
-                <stringProp name="Argument.name">username</stringProp>
-                <stringProp name="Argument.value">admin</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="password" elementType="Argument">
-                <stringProp name="Argument.name">password</stringProp>
-                <stringProp name="Argument.value">admin</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="port" elementType="Argument">
-                <stringProp name="Argument.name">port</stringProp>
-                <stringProp name="Argument.value">9443</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="service_host" elementType="Argument">
-                <stringProp name="Argument.name">service_host</stringProp>
-                <stringProp name="Argument.value">localhost</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="backend_host_port" elementType="Argument">
-                <stringProp name="Argument.name">backend_host_port</stringProp>
-                <stringProp name="Argument.value">http://192.168.48.231:9781</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="msg_fwd_ep_name" elementType="Argument">
-                <stringProp name="Argument.name">msg_fwd_ep_name</stringProp>
-                <stringProp name="Argument.value">msep01</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="fwd_proc_name" elementType="Argument">
-                <stringProp name="Argument.name">fwd_proc_name</stringProp>
-                <stringProp name="Argument.value">fwdproc</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </Arguments>
-          <hashTree/>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-            <collectionProp name="HeaderManager.headers"/>
-          </HeaderManager>
-          <hashTree/>
-          <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
-            <collectionProp name="CookieManager.cookies"/>
-            <boolProp name="CookieManager.clearEachIteration">false</boolProp>
-            <stringProp name="CookieManager.policy">standard</stringProp>
-            <stringProp name="CookieManager.implementation">org.apache.jmeter.protocol.http.control.HC4CookieHandler</stringProp>
-          </CookieManager>
-          <hashTree/>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Login" enabled="true"/>
           <hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Loading The Login Page" enabled="true">
@@ -256,7 +256,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/message_store/index.jsp</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/message_store/index.jsp</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -310,7 +310,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -337,7 +337,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/admin/index.jsp?loginStatus=true</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/admin/index.jsp?loginStatus=true</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -364,7 +364,7 @@
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -391,7 +391,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/message_store/index.jsp?region=region1&amp;item=messageStore_menu</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/message_store/index.jsp?region=region1&amp;item=messageStore_menu</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -510,7 +510,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -537,7 +537,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/message_store/jmsMessageStore.jsp</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/message_store/jmsMessageStore.jsp</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -568,7 +568,7 @@
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -588,7 +588,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/message_store/ServiceCaller.jsp</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/message_store/ServiceCaller.jsp</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -637,7 +637,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -664,7 +664,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/message_store/index.jsp</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/message_store/index.jsp</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -699,7 +699,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -726,7 +726,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/api/index.jsp?region=region1&amp;item=rest_api_menu</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/api/index.jsp?region=region1&amp;item=rest_api_menu</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -768,7 +768,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -788,7 +788,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/api/manageAPI.jsp?mode=add</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/api/manageAPI.jsp?mode=add</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -827,7 +827,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -854,7 +854,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/api/manageAPI.jsp?mode=add</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/api/manageAPI.jsp?mode=add</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -984,7 +984,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1011,7 +1011,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/api/manageAPI.jsp?mode=add</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/api/manageAPI.jsp?mode=add</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1075,7 +1075,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1095,7 +1095,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/api/manageAPI.jsp?mode=add</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/api/manageAPI.jsp?mode=add</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1151,7 +1151,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1171,7 +1171,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/api/designToData.jsp?return=anonSequenceHandler.jsp&amp;originator=manageAPI.jsp&amp;sequence=in&amp;index=-1</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/api/designToData.jsp?return=anonSequenceHandler.jsp&amp;originator=manageAPI.jsp&amp;sequence=in&amp;index=-1</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1206,7 +1206,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1226,7 +1226,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/api/anonSequenceHandler.jsp?sequence=in&amp;index=-1&amp;originator=designToData.jsp&amp;ordinal=1</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/api/anonSequenceHandler.jsp?sequence=in&amp;index=-1&amp;originator=designToData.jsp&amp;ordinal=1</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1296,7 +1296,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1323,7 +1323,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/sequences/design_sequence.jsp?serviceName=API-Resource</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/sequences/design_sequence.jsp?serviceName=API-Resource</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1362,7 +1362,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1382,7 +1382,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/sequences/design_sequence.jsp?serviceName=API-Resource</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/sequences/design_sequence.jsp?serviceName=API-Resource</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1505,7 +1505,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1532,7 +1532,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/sequences/design_sequence.jsp?serviceName=API-Resource</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/sequences/design_sequence.jsp?serviceName=API-Resource</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1606,7 +1606,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1633,7 +1633,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/sequences/design_sequence.jsp?serviceName=API-Resource</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/sequences/design_sequence.jsp?serviceName=API-Resource</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1672,7 +1672,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1692,7 +1692,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/sequences/design_sequence.jsp?serviceName=API-Resource</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/sequences/design_sequence.jsp?serviceName=API-Resource</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1766,7 +1766,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1793,7 +1793,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/sequences/design_sequence.jsp?serviceName=API-Resource</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/sequences/design_sequence.jsp?serviceName=API-Resource</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1832,7 +1832,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1859,7 +1859,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/sequences/design_sequence.jsp?serviceName=API-Resource</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/sequences/design_sequence.jsp?serviceName=API-Resource</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1901,7 +1901,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1921,7 +1921,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/sequences/save_sequence.jsp?sequence=in</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/sequences/save_sequence.jsp?sequence=in</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1970,7 +1970,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -1990,7 +1990,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/api/anonSequenceHandler.jsp?sequence=in&amp;originator=save_sequence.jsp</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/api/anonSequenceHandler.jsp?sequence=in&amp;originator=save_sequence.jsp</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2039,7 +2039,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2059,7 +2059,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/api/designToData.jsp?sequence=in&amp;index=-1&amp;resourceIndex=-1</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/api/designToData.jsp?sequence=in&amp;index=-1&amp;resourceIndex=-1</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2101,7 +2101,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2121,7 +2121,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/api/manageAPI.jsp?mode=add&amp;apiName=${store_api}&amp;resourceIndex=-1</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/api/manageAPI.jsp?mode=add&amp;apiName=${store_api}&amp;resourceIndex=-1</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2167,7 +2167,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2187,7 +2187,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/api/manageAPI.jsp?mode=add&amp;apiName=${store_api}&amp;resourceIndex=-1</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/api/manageAPI.jsp?mode=add&amp;apiName=${store_api}&amp;resourceIndex=-1</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2310,7 +2310,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2337,7 +2337,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/api/manageAPI.jsp?mode=add&amp;apiName=${store_api}&amp;resourceIndex=-1</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/api/manageAPI.jsp?mode=add&amp;apiName=${store_api}&amp;resourceIndex=-1</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2380,7 +2380,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2400,7 +2400,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/api/manageAPI.jsp?mode=add&amp;apiName=${store_api}&amp;resourceIndex=-1</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/api/manageAPI.jsp?mode=add&amp;apiName=${store_api}&amp;resourceIndex=-1</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2464,7 +2464,7 @@
                 </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2484,7 +2484,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/api/manageAPI.jsp?mode=add&amp;apiName=${store_api}&amp;resourceIndex=-1</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/api/manageAPI.jsp?mode=add&amp;apiName=${store_api}&amp;resourceIndex=-1</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2519,7 +2519,7 @@
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -2539,7 +2539,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/api/manageAPI.jsp?mode=add&amp;apiName=${store_api}&amp;resourceIndex=-1</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/api/manageAPI.jsp?mode=add&amp;apiName=${store_api}&amp;resourceIndex=-1</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2594,7 +2594,7 @@
                   <collectionProp name="HeaderManager.headers">
                     <elementProp name="Referer" elementType="Header">
                       <stringProp name="Header.name">Referer</stringProp>
-                      <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/message_store/index.jsp</stringProp>
+                      <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/message_store/index.jsp</stringProp>
                     </elementProp>
                     <elementProp name="Accept-Language" elementType="Header">
                       <stringProp name="Header.name">Accept-Language</stringProp>
@@ -3388,7 +3388,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://${mgt_host}:${port}/carbon/message_store/index.jsp</stringProp>
+                    <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/message_store/index.jsp</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
