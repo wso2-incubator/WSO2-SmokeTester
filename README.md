@@ -26,7 +26,7 @@ Please Refer the wiki section for instructions on adding new Jmeter based tests.
 ``` 
 Above will execute all the scripts which are located in TestSuites/ESB/4.9.0 
 
-##### Running With properties
+##### Running Without properties
  If you execute the script without parsing any parameters as shown below. It will execute all the scrits included in the testscripts/scripts directory.
 ```sh
  ./run.sh
