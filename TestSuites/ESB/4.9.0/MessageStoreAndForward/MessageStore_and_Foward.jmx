@@ -2560,6 +2560,10 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
+              <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+                <stringProp name="ConstantTimer.delay">60000</stringProp>
+              </ConstantTimer>
+              <hashTree/>
             </hashTree>
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Store Messages" enabled="true"/>
@@ -3042,6 +3046,10 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
+              <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+                <stringProp name="ConstantTimer.delay">20000</stringProp>
+              </ConstantTimer>
+              <hashTree/>
             </hashTree>
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create Forwarding Processor" enabled="true"/>
@@ -3422,7 +3430,7 @@
               <hashTree/>
             </hashTree>
             <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
-              <stringProp name="ConstantTimer.delay">10000</stringProp>
+              <stringProp name="ConstantTimer.delay">60000</stringProp>
             </ConstantTimer>
             <hashTree/>
           </hashTree>
