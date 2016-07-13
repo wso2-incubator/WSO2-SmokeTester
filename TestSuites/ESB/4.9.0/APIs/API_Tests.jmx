@@ -2430,6 +2430,10 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                   <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
                 </BeanShellAssertion>
                 <hashTree/>
+                <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+                  <stringProp name="ConstantTimer.delay">60000</stringProp>
+                </ConstantTimer>
+                <hashTree/>
               </hashTree>
             </hashTree>
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Edit API" enabled="true"/>
@@ -2640,6 +2644,10 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                     <intProp name="Assertion.test_type">2</intProp>
                   </ResponseAssertion>
                   <hashTree/>
+                  <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+                    <stringProp name="ConstantTimer.delay">90000</stringProp>
+                  </ConstantTimer>
+                  <hashTree/>
                 </hashTree>
               </hashTree>
             </hashTree>
@@ -2728,7 +2736,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                 </HeaderManager>
                 <hashTree/>
               </hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Invoke API With PUT" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Invoke API With PUT" enabled="false">
                 <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                   <collectionProp name="Arguments.arguments">

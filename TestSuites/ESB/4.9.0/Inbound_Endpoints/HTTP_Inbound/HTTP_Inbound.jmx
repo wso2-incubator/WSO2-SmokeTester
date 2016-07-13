@@ -1791,7 +1791,7 @@
                 </HTTPSamplerProxy>
                 <hashTree>
                   <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
-                    <stringProp name="ConstantTimer.delay">2000</stringProp>
+                    <stringProp name="ConstantTimer.delay">60000</stringProp>
                   </ConstantTimer>
                   <hashTree/>
                   <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
@@ -2382,7 +2382,7 @@ soap:encodingStyle=&quot;http://www.w3.org/2003/05/soap-encoding&quot;&gt;&#xd;
               </hashTree>
             </hashTree>
             <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
-              <stringProp name="ConstantTimer.delay">300</stringProp>
+              <stringProp name="ConstantTimer.delay">500</stringProp>
             </ConstantTimer>
             <hashTree/>
           </hashTree>
