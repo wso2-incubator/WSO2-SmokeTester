@@ -17,6 +17,7 @@ Please Refer the wiki section for instructions on adding new Jmeter based tests.
 - Configure the required application properties in resources/configs/application.properties e.g: Set the Jmeter Home variable etc.
 - Set test related properties in resources/configs/server.properties
 - Execute the Script. 
+
 ##### Running With properties
  You can parse Product name and product version properties when executing the script
 ```sh
