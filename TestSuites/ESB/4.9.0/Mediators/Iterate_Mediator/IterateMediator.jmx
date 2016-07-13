@@ -82,18 +82,7 @@
           </HeaderManager>
           <hashTree/>
           <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Test Level Properties" enabled="true">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="username" elementType="Argument">
-                <stringProp name="Argument.name">username</stringProp>
-                <stringProp name="Argument.value">admin</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="password" elementType="Argument">
-                <stringProp name="Argument.name">password</stringProp>
-                <stringProp name="Argument.value">admin</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
+            <collectionProp name="Arguments.arguments"/>
             <stringProp name="TestPlan.comments">Test Related Properties are listed here</stringProp>
           </Arguments>
           <hashTree/>
@@ -535,12 +524,14 @@
                       <stringProp name="Argument.name">inSeqOp</stringProp>
                       <stringProp name="Argument.value">none</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="proxy.in.registry" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">proxy.in.registry</stringProp>
                       <stringProp name="Argument.value"></stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="inImportSeq" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -823,7 +814,7 @@
                     <elementProp name="srcTextArea" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">srcTextArea</stringProp>
-                      <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; &lt;proxy xmlns=&quot;http://ws.apache.org/ns/synapse&quot;        name=&quot;IterateProxy&quot;        transports=&quot;http,https&quot;        statistics=&quot;disable&quot;        trace=&quot;disable&quot;        startOnLoad=&quot;true&quot;&gt;    &lt;target&gt;       &lt;inSequence&gt;           &lt;log level=&quot;custom&quot;&gt;             &lt;property name=&quot;Message&quot; value=&quot;Testing Iterate Mediator&quot;/&gt;          &lt;/log&gt;          &lt;iterate xmlns:m0=&quot;http://services.samples&quot;                   preservePayload=&quot;true&quot;                   attachPath=&quot;//m0:getQuote&quot;                   expression=&quot;//m0:getQuote/m0:request&quot;&gt;             &lt;target&gt;                &lt;sequence&gt;                   &lt;send&gt;                      &lt;endpoint&gt;                         &lt;address uri=&quot;http://192.168.48.231:9781/services/SimpleStockQuoteService&quot;/&gt;                      &lt;/endpoint&gt;                   &lt;/send&gt;                &lt;/sequence&gt;             &lt;/target&gt;          &lt;/iterate&gt;       &lt;/inSequence&gt;       &lt;outSequence&gt;       &lt;log level=&quot;custom&quot;&gt;             &lt;property name=&quot;Message&quot; value=&quot;Aggregating responses...&quot;/&gt;          &lt;/log&gt;          &lt;aggregate&gt;             &lt;completeCondition&gt;                &lt;messageCount/&gt;             &lt;/completeCondition&gt;             &lt;onComplete xmlns:m0=&quot;http://services.samples&quot; expression=&quot;//m0:getQuoteResponse&quot;&gt;                &lt;send/&gt;             &lt;/onComplete&gt;          &lt;/aggregate&gt;       &lt;/outSequence&gt;    &lt;/target&gt;    &lt;publishWSDL uri=&quot;http://192.168.48.231:9781/services/SimpleStockQuoteService?wsdl&quot;/&gt;    &lt;description/&gt; &lt;/proxy&gt;</stringProp>
+                      <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; &lt;proxy xmlns=&quot;http://ws.apache.org/ns/synapse&quot; name=&quot;IterateProxy&quot; transports=&quot;http,https&quot; statistics=&quot;disable&quot; trace=&quot;disable&quot; startOnLoad=&quot;true&quot;&gt;    &lt;target&gt;       &lt;inSequence&gt;          &lt;log level=&quot;custom&quot;&gt;             &lt;property name=&quot;Message&quot; value=&quot;Testing Iterate Mediator&quot; /&gt;          &lt;/log&gt;          &lt;iterate xmlns:m0=&quot;http://services.samples&quot; preservePayload=&quot;true&quot; attachPath=&quot;//m0:getQuote&quot; expression=&quot;//m0:getQuote/m0:request&quot;&gt;             &lt;target&gt;                &lt;sequence&gt;                   &lt;send&gt;                      &lt;endpoint&gt;                         &lt;address uri=&quot;${backend_host_port}/services/SimpleStockQuoteService&quot; /&gt;                      &lt;/endpoint&gt;                   &lt;/send&gt;                &lt;/sequence&gt;             &lt;/target&gt;          &lt;/iterate&gt;       &lt;/inSequence&gt;       &lt;outSequence&gt;          &lt;log level=&quot;custom&quot;&gt;             &lt;property name=&quot;Message&quot; value=&quot;Aggregating responses...&quot; /&gt;          &lt;/log&gt;          &lt;aggregate&gt;             &lt;completeCondition&gt;                &lt;messageCount /&gt;             &lt;/completeCondition&gt;             &lt;onComplete xmlns:m0=&quot;http://services.samples&quot; expression=&quot;//m0:getQuoteResponse&quot;&gt;                &lt;send /&gt;             &lt;/onComplete&gt;          &lt;/aggregate&gt;       &lt;/outSequence&gt;    &lt;/target&gt;    &lt;publishWSDL uri=&quot;${backend_host_port}/services/SimpleStockQuoteService?wsdl&quot; /&gt;    &lt;description /&gt; &lt;/proxy&gt;</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
@@ -1154,7 +1145,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="SoapSampler.URL_DATA">http://localhost:8280/services/IterateProxy.IterateProxyHttpSoap11Endpoint</stringProp>
+              <stringProp name="SoapSampler.URL_DATA">http://${service_host}:${service_port}/services/IterateProxy.IterateProxyHttpSoap11Endpoint</stringProp>
               <stringProp name="HTTPSamper.xml_data">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:ser=&quot;http://services.samples&quot; xmlns:xsd=&quot;http://services.samples/xsd&quot;&gt;
    &lt;soapenv:Header/&gt;
    &lt;soapenv:Body&gt;
