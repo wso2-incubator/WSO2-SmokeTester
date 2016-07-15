@@ -2,7 +2,6 @@
 - **Product Name & Version** - Enterprise Service Bus - 4.9.0
 - **Author** - Sashika Wijesinghe
 - **Created Date** - 08/07/2016
-- **Execute** - Copy the script and relevant artifacts to the "WSO2-SmokeTester/resources/testscripts/ESB/4.9.0" location and run the tool
 
 #### **Test Scenario** -
  **Purpose** - In this scenario, Custom proxy is created using the existing Esndpoint, Local Entry and Sequence. This scenario covers below features
@@ -13,10 +12,26 @@
 
 #### **Test Description** -
  **Pre-requisites**
-- Start WSO2 Appication Server and deploy the attached **_InfoParser.aar_** service.
-- Set the backend server hostname and port in WSO2-SmokeTester/resources/configs/**_server.properties_** file
+   - Set the below parameters in **_server.properties_** file for this to work. (You can configure these properties with parameters relevant for your environment)
 
- **Execute the Scenario** -  Copy the script file to _"WSO2-SmokeTester/resources/testscripts/ESB/4.9.0/Scripts"_ location and run the script.
+```sh
+//Server Name, Servlet Port and the service port
+mgt_host            localhost
+mgt_https_port      9443
+http_serviceport    8280
+https_serviceport   8243
+
+// Admin Username and password of the management console
+username	admin	
+password	admin	
+
+Backend service - Deploy the attached "InfoParser.aar" service. 
+//Set the backend service host and port 
+backend_host_port   http://192.168.48.231:9781
+````
+
+
+ **Execute the Scenario** -  set the above server properties and run the tool
 
  
 #### **Reference** -
