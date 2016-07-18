@@ -2,7 +2,6 @@
 - **Product Name & Version** - Enterprise Service Bus - 4.9.0
 - **Author** - Sashika Wijesinghe
 - **Created Date** - 08/07/2016
-- **Execute** - Copy the script and relevant artifacts to the "WSO2-SmokeTester/resources/testscripts/ESB/4.9.0" location and run the tool
 
 #### **Test Scenario** -
  **Purpose** - This script covers the basic functionalities related to HTTP Endpoints
@@ -11,9 +10,21 @@
 - Dynamic HTTP Endpoint - Create and Delete
 
 #### **Test Description** -
- **Pre-requisites** - None
+ **Pre-requisites** -
+  - Set the below parameters in **_server.properties_** file for this to work. (You can configure these properties with parameters relevant for your environment)
+```sh
+//Server Name, Servlet Port and the service port
+mgt_host            localhost
+mgt_https_port      9443
+http_serviceport    8280
 
- **Execute the Scenario** -  Copy the script file to _"WSO2-SmokeTester/resources/testscripts/ESB/4.9.0/Scripts"_ location and run the script.
+// Admin Username and password of the management console
+username	admin	
+password	admin	
+
+````
+
+ **Execute the Scenario** -  After setting the above paramters runn the tool
 
  
 #### **Reference** -
