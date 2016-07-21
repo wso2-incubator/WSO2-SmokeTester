@@ -1,4 +1,4 @@
-- **Test Script Name** - ESB_ServiceChaining.jmx
+- **Test Script Name** - ESBJAVA-4490.jmx
 - **Product Name & Version** - Enterprise Service Bus - 4.9.0
 - **Author** - Sashika Wijesinghe
 - **Created Date** - 21/07/2016
