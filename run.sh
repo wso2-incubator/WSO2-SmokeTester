@@ -74,6 +74,16 @@ function help_message() {
 	exit
 }
 
+function copy_3rdparty_libs() {
+	log "WARN" "The script will update your Jmeter instance!"
+	if test "$(ls -A "$LIB_LOCATION")"; then
+		log "INFO" "Copying 3rd party libraries into $JMETER_HOME/lib/ext"
+                cp $LIB_LOCATION/* $JMETER_HOME/lib/ext/
+	else
+		log "INFO" "No 3rd party libraries found"
+	fi
+}
+
 function get_jmx() {
 	cp `find $ARTEFACT_LOCATION/$1/$2/ -iname "*jmx" -exec echo {} \;` $REPORT_LOCATION/runtime/scripts/
 }
@@ -112,6 +122,7 @@ fi
 
 log "INFO" "Starting WSO2 Smoke Tester"
 clean_setup
+copy_3rdparty_libs
 
 # Check environment variables
 check_variables
