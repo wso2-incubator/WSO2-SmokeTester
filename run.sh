@@ -75,12 +75,14 @@ function help_message() {
 }
 
 function copy_3rdparty_libs() {
-	log "WARN" "The script will update your Jmeter instance!"
-	if test "$(ls -A "$LIB_LOCATION")"; then
-		log "INFO" "Copying 3rd party libraries into $JMETER_HOME/lib/ext"
-                cp $LIB_LOCATION/* $JMETER_HOME/lib/ext/
-	else
-		log "INFO" "No 3rd party libraries found"
+	if [ "$JMETER_HOME" != "" ];then
+		log "WARNING" "The script will update your Jmeter instance!"
+		if test "$(ls -A "$LIB_LOCATION")"; then
+			log "INFO" "Copying 3rd party libraries into $JMETER_HOME/lib/ext"
+			cp $LIB_LOCATION/* $JMETER_HOME/lib/ext/
+		else
+			log "INFO" "No 3rd party libraries found"
+		fi
 	fi
 }
 
