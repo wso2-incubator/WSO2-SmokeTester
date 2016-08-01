@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.9" jmeter="3.0 r1743807">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="ESB Smoke Test Suite" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ESBJAVA-4544" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1466077942000</longProp>
+        <longProp name="ThreadGroup.end_time">1466077942000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <stringProp name="TestPlan.comments">Test for JIRA: https://wso2.org/jira/browse/ESBJAVA-4544</stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Pre Test Actions" enabled="true">
+          <stringProp name="TestPlan.comments">Any Prerequisites that needs to be set before running the tests</stringProp>
+        </GenericController>
+        <hashTree>
+          <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Jmeter Parameter Setter" enabled="true">
+            <stringProp name="cacheKey"></stringProp>
+            <stringProp name="filename">resources/clients/JmeterParamSetter.bsh</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script"></stringProp>
+            <stringProp name="scriptLanguage">beanshell</stringProp>
+          </JSR223Sampler>
+          <hashTree/>
+        </hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Tests" enabled="true">
+          <stringProp name="TestPlan.comments">Place All your Test Samplers within This Cimple Controller</stringProp>
+        </GenericController>
+        <hashTree>
+          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Global Server Properties" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="mgt_host" elementType="Argument">
+                <stringProp name="Argument.name">mgt_host</stringProp>
+                <stringProp name="Argument.value">localhost</stringProp>
+                <stringProp name="Argument.desc">Host Name of the ESB / LB</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="mgt_https_port" elementType="Argument">
+                <stringProp name="Argument.name">mgt_https_port</stringProp>
+                <stringProp name="Argument.value">9443</stringProp>
+                <stringProp name="Argument.desc">Default sevlet port of the server</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="http_serviceport" elementType="Argument">
+                <stringProp name="Argument.name">http_serviceport</stringProp>
+                <stringProp name="Argument.value">8280</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="https_serviceport" elementType="Argument">
+                <stringProp name="Argument.name">https_serviceport</stringProp>
+                <stringProp name="Argument.value">8243</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </Arguments>
+          <hashTree/>
+          <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+            <collectionProp name="CookieManager.cookies"/>
+            <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+            <stringProp name="CookieManager.policy">standard</stringProp>
+            <stringProp name="CookieManager.implementation">org.apache.jmeter.protocol.http.control.HC4CookieHandler</stringProp>
+          </CookieManager>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers"/>
+          </HeaderManager>
+          <hashTree/>
+          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Test Level Properties" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="hl7_connect_port" elementType="Argument">
+                <stringProp name="Argument.name">hl7_connect_port</stringProp>
+                <stringProp name="Argument.value">20000</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+            <stringProp name="TestPlan.comments">Test Related Properties are listed here</stringProp>
+          </Arguments>
+          <hashTree/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Login" enabled="true"/>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Loading The Login Page" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">carbon/admin/login.jsp</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.image_parser">true</boolProp>
+              <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+              <stringProp name="HTTPSampler.concurrentPool">2</stringProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="531833778">&lt;title&gt;WSO2 Enterprise Service Bus (WSO2 ESB)&lt;/title&gt;</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login In" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="password" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                    <stringProp name="Argument.name">password</stringProp>
+                    <stringProp name="Argument.value">${password}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="username" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                    <stringProp name="Argument.name">username</stringProp>
+                    <stringProp name="Argument.value">${username}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">carbon/admin/login_action.jsp</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.image_parser">true</boolProp>
+              <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+              <stringProp name="HTTPSampler.concurrentPool">2</stringProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree/>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+              <stringProp name="ConstantTimer.delay">300</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="ESBJAVA-4544 Test" enabled="true"/>
+          <hashTree>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Deploy Services" enabled="true"/>
+            <hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="177 /carbon/configadmin/index.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="region" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">region</stringProp>
+                      <stringProp name="Argument.value">region1</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="item" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">item</stringProp>
+                      <stringProp name="Argument.value">config_menu</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/configadmin/index.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/admin/index.jsp?loginStatus=true</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="182 /carbon/configadmin/validate-conf-ajaxprocessor.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="synConfig" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">synConfig</stringProp>
+                      <stringProp name="Argument.value">%3C%3Fxml+version%3D%221.0%22+encoding%3D%22UTF-8%22%3F%3E%0A%3Cdefinitions+xmlns%3D%22http%3A%2F%2Fws.apache.org%2Fns%2Fsynapse%22%3E%0A++++%3Cregistry+provider%3D%22org.wso2.carbon.mediation.registry.WSO2Registry%22%3E%0A++++++++%3Cparameter+name%3D%22cachableDuration%22%3E15000%3C%2Fparameter%3E%0A++++%3C%2Fregistry%3E%0A++++%3CtaskManager+provider%3D%22org.wso2.carbon.mediation.ntask.NTaskTaskManager%22%2F%3E%0A++++%3Csequence+name%3D%22fault%22%3E%0A++++++++%3C!--+Log+the+message+at+the+full+log+level+with+the+ERROR_MESSAGE+and+the+ERROR_CODE--%3E%0A++++++++%3Clog+level%3D%22full%22%3E%0A++++++++++++%3Cproperty+name%3D%22MESSAGE%22+value%3D%22Executing+default+&apos;fault&apos;+sequence%22%2F%3E%0A++++++++++++%3Cproperty+expression%3D%22get-property(&apos;ERROR_CODE&apos;)%22+name%3D%22ERROR_CODE%22%2F%3E%0A++++++++++++%3Cproperty+expression%3D%22get-property(&apos;ERROR_MESSAGE&apos;)%22+name%3D%22ERROR_MESSAGE%22%2F%3E%0A++++++++%3C%2Flog%3E%0A++++++++%3C!--+Drops+the+messages+by+default+if+there+is+a+fault+--%3E%0A++++++++%3Cdrop%2F%3E%0A++++%3C%2Fsequence%3E%0A++++%3Csequence+name%3D%22hl7_InSeq%22+onError%3D%22hl7_ErrSeq%22%3E%0A++++++++%3Clog+level%3D%22full%22%3E%0A++++++++++++%3Cproperty+name%3D%22where%22+value%3D%22in+hl7_InSeq%22%2F%3E%0A++++++++%3C%2Flog%3E%0A++++++++%3Cproperty+name%3D%22HL7_RESULT_MODE%22+scope%3D%22default%22+value%3D%22ACK%22%2F%3E%0A++++++++%3Crespond%2F%3E%0A++++%3C%2Fsequence%3E%0A++++%3Csequence+name%3D%22hl7_ErrSeq%22%3E%0A++++++++%3Clog+level%3D%22full%22%3E%0A++++++++++++%3Cproperty+name%3D%22where%22+value%3D%22in+hl7_ErrSeq%22%2F%3E%0A++++++++%3C%2Flog%3E%0A++++++++%3Cproperty+name%3D%22HL7_RESULT_MODE%22+scope%3D%22default%22+value%3D%22NACK%22%2F%3E%0A++++++++%3Cproperty+name%3D%22HL7_NACK_MESSAGE%22+scope%3D%22default%22+value%3D%22internal+error%22%2F%3E%0A++++%3C%2Fsequence%3E%0A++++%3Csequence+name%3D%22main%22%3E%0A++++++++%3Cin%3E%0A++++++++++++%3C!--+Log+all+messages+passing+through+--%3E%0A++++++++++++%3Clog+level%3D%22full%22%2F%3E%0A++++++++++++%3C!--+ensure+that+the+default+configuration+only+sends+if+it+is+one+of+samples+--%3E%0A++++++++++++%3C!--+Otherwise+Synapse+would+be+an+open+proxy+by+default+(BAD!)+++++++++++++++--%3E%0A++++++++++++%3Cfilter+regex%3D%22http%3A%2F%2F${mgt_host}%3A9000.*%22+source%3D%22get-property(&apos;To&apos;)%22%3E%0A++++++++++++++++%3C!--+Send+the+messages+where+they+have+been+sent+(i.e.+implicit+%22To%22+EPR)+--%3E%0A++++++++++++++++%3Csend%2F%3E%0A++++++++++++%3C%2Ffilter%3E%0A++++++++%3C%2Fin%3E%0A++++++++%3Cout%3E%0A++++++++++++%3Csend%2F%3E%0A++++++++%3C%2Fout%3E%0A++++++++%3Cdescription%3EThe+main+sequence+for+the+message+mediation%3C%2Fdescription%3E%0A++++%3C%2Fsequence%3E%0A++++%3C!--+You+can+add+any+flat+sequences%2C+endpoints%2C+etc..+to+this+synapse.xml+file+if+you+do%0A++++*not*+want+to+keep+the+artifacts+in+several+files+--%3E%0A++++%3CinboundEndpoint+name%3D%22hl7_InboundEP%22+onError%3D%22hl7_ErrSeq%22%0A++++++++protocol%3D%22hl7%22+sequence%3D%22hl7_InSeq%22+suspend%3D%22false%22%3E%0A++++++++%3Cparameters%3E%0A++++++++++++%3Cparameter+name%3D%22inbound.hl7.ValidateMessage%22%3Efalse%3C%2Fparameter%3E%0A++++++++++++%3Cparameter+name%3D%22inbound.hl7.Port%22%3E20000%3C%2Fparameter%3E%0A++++++++++++%3Cparameter+name%3D%22inbound.hl7.TimeOut%22%3E10000%3C%2Fparameter%3E%0A++++++++++++%3Cparameter+name%3D%22inbound.hl7.AutoAck%22%3Efalse%3C%2Fparameter%3E%0A++++++++++++%3Cparameter+name%3D%22inbound.hl7.BuildInvalidMessages%22%3Etrue%3C%2Fparameter%3E%0A++++++++++++%3Cparameter+name%3D%22inbound.hl7.PassThroughInvalidMessages%22%3Etrue%3C%2Fparameter%3E%0A++++++++++++%3Cparameter+name%3D%22inbound.hl7.CharSet%22%3EUTF-8%3C%2Fparameter%3E%0A++++++++%3C%2Fparameters%3E%0A++++%3C%2FinboundEndpoint%3E%0A%3C%2Fdefinitions%3E</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/configadmin/validate-conf-ajaxprocessor.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/configadmin/index.jsp?region=region1&amp;item=config_menu</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="X-Requested-With" elementType="Header">
+                      <stringProp name="Header.name">X-Requested-With</stringProp>
+                      <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                    </elementProp>
+                    <elementProp name="Content-Type" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">*/*</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="183 /carbon/configadmin/saveconfig.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="rawConfig" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">rawConfig</stringProp>
+                      <stringProp name="Argument.value">%3C%3Fxml+version%3D%221.0%22+encoding%3D%22UTF-8%22%3F%3E%0D%0A%3Cdefinitions+xmlns%3D%22http%3A%2F%2Fws.apache.org%2Fns%2Fsynapse%22%3E%0D%0A++++%3Cregistry+provider%3D%22org.wso2.carbon.mediation.registry.WSO2Registry%22%3E%0D%0A++++++++%3Cparameter+name%3D%22cachableDuration%22%3E15000%3C%2Fparameter%3E%0D%0A++++%3C%2Fregistry%3E%0D%0A++++%3CtaskManager+provider%3D%22org.wso2.carbon.mediation.ntask.NTaskTaskManager%22%2F%3E%0D%0A++++%3Csequence+name%3D%22fault%22%3E%0D%0A++++++++%3C%21--+Log+the+message+at+the+full+log+level+with+the+ERROR_MESSAGE+and+the+ERROR_CODE--%3E%0D%0A++++++++%3Clog+level%3D%22full%22%3E%0D%0A++++++++++++%3Cproperty+name%3D%22MESSAGE%22+value%3D%22Executing+default+%27fault%27+sequence%22%2F%3E%0D%0A++++++++++++%3Cproperty+expression%3D%22get-property%28%27ERROR_CODE%27%29%22+name%3D%22ERROR_CODE%22%2F%3E%0D%0A++++++++++++%3Cproperty+expression%3D%22get-property%28%27ERROR_MESSAGE%27%29%22+name%3D%22ERROR_MESSAGE%22%2F%3E%0D%0A++++++++%3C%2Flog%3E%0D%0A++++++++%3C%21--+Drops+the+messages+by+default+if+there+is+a+fault+--%3E%0D%0A++++++++%3Cdrop%2F%3E%0D%0A++++%3C%2Fsequence%3E%0D%0A++++%3Csequence+name%3D%22hl7_InSeq%22+onError%3D%22hl7_ErrSeq%22%3E%0D%0A++++++++%3Clog+level%3D%22full%22%3E%0D%0A++++++++++++%3Cproperty+name%3D%22where%22+value%3D%22in+hl7_InSeq%22%2F%3E%0D%0A++++++++%3C%2Flog%3E%0D%0A++++++++%3Cproperty+name%3D%22HL7_RESULT_MODE%22+scope%3D%22default%22+value%3D%22ACK%22%2F%3E%0D%0A++++++++%3Crespond%2F%3E%0D%0A++++%3C%2Fsequence%3E%0D%0A++++%3Csequence+name%3D%22hl7_ErrSeq%22%3E%0D%0A++++++++%3Clog+level%3D%22full%22%3E%0D%0A++++++++++++%3Cproperty+name%3D%22where%22+value%3D%22in+hl7_ErrSeq%22%2F%3E%0D%0A++++++++%3C%2Flog%3E%0D%0A++++++++%3Cproperty+name%3D%22HL7_RESULT_MODE%22+scope%3D%22default%22+value%3D%22NACK%22%2F%3E%0D%0A++++++++%3Cproperty+name%3D%22HL7_NACK_MESSAGE%22+scope%3D%22default%22+value%3D%22internal+error%22%2F%3E%0D%0A++++%3C%2Fsequence%3E%0D%0A++++%3Csequence+name%3D%22main%22%3E%0D%0A++++++++%3Cin%3E%0D%0A++++++++++++%3C%21--+Log+all+messages+passing+through+--%3E%0D%0A++++++++++++%3Clog+level%3D%22full%22%2F%3E%0D%0A++++++++++++%3C%21--+ensure+that+the+default+configuration+only+sends+if+it+is+one+of+samples+--%3E%0D%0A++++++++++++%3C%21--+Otherwise+Synapse+would+be+an+open+proxy+by+default+%28BAD%21%29+++++++++++++++--%3E%0D%0A++++++++++++%3Cfilter+regex%3D%22http%3A%2F%2F${mgt_host}%3A9000.*%22+source%3D%22get-property%28%27To%27%29%22%3E%0D%0A++++++++++++++++%3C%21--+Send+the+messages+where+they+have+been+sent+%28i.e.+implicit+%22To%22+EPR%29+--%3E%0D%0A++++++++++++++++%3Csend%2F%3E%0D%0A++++++++++++%3C%2Ffilter%3E%0D%0A++++++++%3C%2Fin%3E%0D%0A++++++++%3Cout%3E%0D%0A++++++++++++%3Csend%2F%3E%0D%0A++++++++%3C%2Fout%3E%0D%0A++++++++%3Cdescription%3EThe+main+sequence+for+the+message+mediation%3C%2Fdescription%3E%0D%0A++++%3C%2Fsequence%3E%0D%0A++++%3C%21--+You+can+add+any+flat+sequences%2C+endpoints%2C+etc..+to+this+synapse.xml+file+if+you+do%0D%0A++++*not*+want+to+keep+the+artifacts+in+several+files+--%3E%0D%0A++++%3CinboundEndpoint+name%3D%22hl7_InboundEP%22+onError%3D%22hl7_ErrSeq%22%0D%0A++++++++protocol%3D%22hl7%22+sequence%3D%22hl7_InSeq%22+suspend%3D%22false%22%3E%0D%0A++++++++%3Cparameters%3E%0D%0A++++++++++++%3Cparameter+name%3D%22inbound.hl7.ValidateMessage%22%3Efalse%3C%2Fparameter%3E%0D%0A++++++++++++%3Cparameter+name%3D%22inbound.hl7.Port%22%3E20000%3C%2Fparameter%3E%0D%0A++++++++++++%3Cparameter+name%3D%22inbound.hl7.TimeOut%22%3E10000%3C%2Fparameter%3E%0D%0A++++++++++++%3Cparameter+name%3D%22inbound.hl7.AutoAck%22%3Efalse%3C%2Fparameter%3E%0D%0A++++++++++++%3Cparameter+name%3D%22inbound.hl7.BuildInvalidMessages%22%3Etrue%3C%2Fparameter%3E%0D%0A++++++++++++%3Cparameter+name%3D%22inbound.hl7.PassThroughInvalidMessages%22%3Etrue%3C%2Fparameter%3E%0D%0A++++++++++++%3Cparameter+name%3D%22inbound.hl7.CharSet%22%3EUTF-8%3C%2Fparameter%3E%0D%0A++++++++%3C%2Fparameters%3E%0D%0A++++%3C%2FinboundEndpoint%3E%0D%0A%3C%2Fdefinitions%3E</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/configadmin/saveconfig.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/configadmin/index.jsp?region=region1&amp;item=config_menu</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="Content-Type" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="190 /carbon/configadmin/index.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="status" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">status</stringProp>
+                      <stringProp name="Argument.value">updated</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="rand" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">rand</stringProp>
+                      <stringProp name="Argument.value">1469622752576</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/configadmin/index.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/configadmin/saveconfig.jsp</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Delay" enabled="true">
+                  <stringProp name="ConstantTimer.delay">5000</stringProp>
+                </ConstantTimer>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Deploy Services" enabled="true"/>
+            <hashTree>
+              <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="Send Valid HL7 message" enabled="true">
+                <stringProp name="TCPSampler.classname">nl.avisi.jmeter.mllpsampler.MllpTCPClient</stringProp>
+                <stringProp name="TCPSampler.server">${service_host}</stringProp>
+                <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+                <stringProp name="TCPSampler.port">${hl7_connect_port}</stringProp>
+                <boolProp name="TCPSampler.nodelay">false</boolProp>
+                <stringProp name="TCPSampler.timeout"></stringProp>
+                <stringProp name="TCPSampler.request">MSH|^~\\&amp;|HIS|RIH|EKG|EKG|199904140038||ADT^A01|12345|P|2.2\r</stringProp>
+                <boolProp name="TCPSampler.closeConnection">false</boolProp>
+                <stringProp name="ConfigTestElement.username"></stringProp>
+                <stringProp name="ConfigTestElement.password"></stringProp>
+              </TCPSampler>
+              <hashTree/>
+              <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="Send Invalid HL7 message" enabled="true">
+                <stringProp name="TCPSampler.classname">nl.avisi.jmeter.mllpsampler.MllpTCPClient</stringProp>
+                <stringProp name="TCPSampler.server">${service_host}</stringProp>
+                <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+                <stringProp name="TCPSampler.port">${hl7_connect_port}</stringProp>
+                <boolProp name="TCPSampler.nodelay">false</boolProp>
+                <stringProp name="TCPSampler.timeout"></stringProp>
+                <stringProp name="TCPSampler.request">MSH|^~\\&amp;|HIS|RIH|EKG|EKG|199904140038||ADT^A01|12345|P\r</stringProp>
+                <boolProp name="TCPSampler.closeConnection">false</boolProp>
+                <stringProp name="ConfigTestElement.username"></stringProp>
+                <stringProp name="ConfigTestElement.password"></stringProp>
+              </TCPSampler>
+              <hashTree/>
+              <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Delay" enabled="true">
+                <stringProp name="ConstantTimer.delay">2000</stringProp>
+              </ConstantTimer>
+              <hashTree/>
+            </hashTree>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Cleanup" enabled="true"/>
+            <hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="195 /carbon/configadmin/index.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="region" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">region</stringProp>
+                      <stringProp name="Argument.value">region1</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="item" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">item</stringProp>
+                      <stringProp name="Argument.value">config_menu</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/configadmin/index.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/configadmin/index.jsp?status=updated&amp;rand=1469622752576</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="200 /carbon/configadmin/validate-conf-ajaxprocessor.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="synConfig" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">synConfig</stringProp>
+                      <stringProp name="Argument.value">%3C%3Fxml+version%3D%221.0%22+encoding%3D%22UTF-8%22%3F%3E%0A%3Cdefinitions+xmlns%3D%22http%3A%2F%2Fws.apache.org%2Fns%2Fsynapse%22%3E%0A++++%3Cregistry+provider%3D%22org.wso2.carbon.mediation.registry.WSO2Registry%22%3E%0A++++++++%3Cparameter+name%3D%22cachableDuration%22%3E15000%3C%2Fparameter%3E%0A++++%3C%2Fregistry%3E%0A++++%3CtaskManager+provider%3D%22org.wso2.carbon.mediation.ntask.NTaskTaskManager%22%2F%3E%0A++++%3Csequence+name%3D%22fault%22%3E%0A++++++++%3C!--+Log+the+message+at+the+full+log+level+with+the+ERROR_MESSAGE+and+the+ERROR_CODE--%3E%0A++++++++%3Clog+level%3D%22full%22%3E%0A++++++++++++%3Cproperty+name%3D%22MESSAGE%22+value%3D%22Executing+default+&apos;fault&apos;+sequence%22%2F%3E%0A++++++++++++%3Cproperty+expression%3D%22get-property(&apos;ERROR_CODE&apos;)%22+name%3D%22ERROR_CODE%22%2F%3E%0A++++++++++++%3Cproperty+expression%3D%22get-property(&apos;ERROR_MESSAGE&apos;)%22+name%3D%22ERROR_MESSAGE%22%2F%3E%0A++++++++%3C%2Flog%3E%0A++++++++%3C!--+Drops+the+messages+by+default+if+there+is+a+fault+--%3E%0A++++++++%3Cdrop%2F%3E%0A++++%3C%2Fsequence%3E%0A++++%3Csequence+name%3D%22main%22%3E%0A++++++++%3Cin%3E%0A++++++++++++%3C!--+Log+all+messages+passing+through+--%3E%0A++++++++++++%3Clog+level%3D%22full%22%2F%3E%0A++++++++++++%3C!--+ensure+that+the+default+configuration+only+sends+if+it+is+one+of+samples+--%3E%0A++++++++++++%3C!--+Otherwise+Synapse+would+be+an+open+proxy+by+default+(BAD!)+++++++++++++++--%3E%0A++++++++++++%3Cfilter+regex%3D%22http%3A%2F%2F${mgt_host}%3A9000.*%22+source%3D%22get-property(&apos;To&apos;)%22%3E%0A++++++++++++++++%3C!--+Send+the+messages+where+they+have+been+sent+(i.e.+implicit+%22To%22+EPR)+--%3E%0A++++++++++++++++%3Csend%2F%3E%0A++++++++++++%3C%2Ffilter%3E%0A++++++++%3C%2Fin%3E%0A++++++++%3Cout%3E%0A++++++++++++%3Csend%2F%3E%0A++++++++%3C%2Fout%3E%0A++++++++%3Cdescription%3EThe+main+sequence+for+the+message+mediation%3C%2Fdescription%3E%0A++++%3C%2Fsequence%3E%0A++++%3C!--+You+can+add+any+flat+sequences%2C+endpoints%2C+etc..+to+this+synapse.xml+file+if+you+do%0A++++*not*+want+to+keep+the+artifacts+in+several+files+--%3E%0A%3C%2Fdefinitions%3E</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/configadmin/validate-conf-ajaxprocessor.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/configadmin/index.jsp?region=region1&amp;item=config_menu</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="X-Requested-With" elementType="Header">
+                      <stringProp name="Header.name">X-Requested-With</stringProp>
+                      <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                    </elementProp>
+                    <elementProp name="Content-Type" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">*/*</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="201 /carbon/configadmin/saveconfig.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="rawConfig" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">rawConfig</stringProp>
+                      <stringProp name="Argument.value">%3C%3Fxml+version%3D%221.0%22+encoding%3D%22UTF-8%22%3F%3E%0D%0A%3Cdefinitions+xmlns%3D%22http%3A%2F%2Fws.apache.org%2Fns%2Fsynapse%22%3E%0D%0A++++%3Cregistry+provider%3D%22org.wso2.carbon.mediation.registry.WSO2Registry%22%3E%0D%0A++++++++%3Cparameter+name%3D%22cachableDuration%22%3E15000%3C%2Fparameter%3E%0D%0A++++%3C%2Fregistry%3E%0D%0A++++%3CtaskManager+provider%3D%22org.wso2.carbon.mediation.ntask.NTaskTaskManager%22%2F%3E%0D%0A++++%3Csequence+name%3D%22fault%22%3E%0D%0A++++++++%3C%21--+Log+the+message+at+the+full+log+level+with+the+ERROR_MESSAGE+and+the+ERROR_CODE--%3E%0D%0A++++++++%3Clog+level%3D%22full%22%3E%0D%0A++++++++++++%3Cproperty+name%3D%22MESSAGE%22+value%3D%22Executing+default+%27fault%27+sequence%22%2F%3E%0D%0A++++++++++++%3Cproperty+expression%3D%22get-property%28%27ERROR_CODE%27%29%22+name%3D%22ERROR_CODE%22%2F%3E%0D%0A++++++++++++%3Cproperty+expression%3D%22get-property%28%27ERROR_MESSAGE%27%29%22+name%3D%22ERROR_MESSAGE%22%2F%3E%0D%0A++++++++%3C%2Flog%3E%0D%0A++++++++%3C%21--+Drops+the+messages+by+default+if+there+is+a+fault+--%3E%0D%0A++++++++%3Cdrop%2F%3E%0D%0A++++%3C%2Fsequence%3E%0D%0A++++%3Csequence+name%3D%22main%22%3E%0D%0A++++++++%3Cin%3E%0D%0A++++++++++++%3C%21--+Log+all+messages+passing+through+--%3E%0D%0A++++++++++++%3Clog+level%3D%22full%22%2F%3E%0D%0A++++++++++++%3C%21--+ensure+that+the+default+configuration+only+sends+if+it+is+one+of+samples+--%3E%0D%0A++++++++++++%3C%21--+Otherwise+Synapse+would+be+an+open+proxy+by+default+%28BAD%21%29+++++++++++++++--%3E%0D%0A++++++++++++%3Cfilter+regex%3D%22http%3A%2F%2F${mgt_host}%3A9000.*%22+source%3D%22get-property%28%27To%27%29%22%3E%0D%0A++++++++++++++++%3C%21--+Send+the+messages+where+they+have+been+sent+%28i.e.+implicit+%22To%22+EPR%29+--%3E%0D%0A++++++++++++++++%3Csend%2F%3E%0D%0A++++++++++++%3C%2Ffilter%3E%0D%0A++++++++%3C%2Fin%3E%0D%0A++++++++%3Cout%3E%0D%0A++++++++++++%3Csend%2F%3E%0D%0A++++++++%3C%2Fout%3E%0D%0A++++++++%3Cdescription%3EThe+main+sequence+for+the+message+mediation%3C%2Fdescription%3E%0D%0A++++%3C%2Fsequence%3E%0D%0A++++%3C%21--+You+can+add+any+flat+sequences%2C+endpoints%2C+etc..+to+this+synapse.xml+file+if+you+do%0D%0A++++*not*+want+to+keep+the+artifacts+in+several+files+--%3E%0D%0A%3C%2Fdefinitions%3E</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/configadmin/saveconfig.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/configadmin/index.jsp?region=region1&amp;item=config_menu</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="Content-Type" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="207 /carbon/configadmin/index.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="status" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">status</stringProp>
+                      <stringProp name="Argument.value">updated</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="rand" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">rand</stringProp>
+                      <stringProp name="Argument.value">1469622840583</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/configadmin/index.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://${mgt_host}:${mgt_https_port}/carbon/configadmin/saveconfig.jsp</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Delay" enabled="true">
+                  <stringProp name="ConstantTimer.delay">5000</stringProp>
+                </ConstantTimer>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="LogOut" enabled="true"/>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login Out" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+              <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">carbon/admin/logout_action.jsp</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.image_parser">true</boolProp>
+              <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+              <stringProp name="HTTPSampler.concurrentPool">2</stringProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree/>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+              <stringProp name="ConstantTimer.delay">300</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+          </hashTree>
+          <JSR223Listener guiclass="TestBeanGUI" testclass="JSR223Listener" testname="Results Listener" enabled="true">
+            <stringProp name="cacheKey"></stringProp>
+            <stringProp name="filename">resources/clients/ResultListner.bsh</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script"></stringProp>
+            <stringProp name="scriptLanguage">java</stringProp>
+          </JSR223Listener>
+          <hashTree/>
+        </hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Post Test Actions" enabled="true"/>
+        <hashTree>
+          <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Result Finalizer" enabled="true">
+            <stringProp name="scriptLanguage">java</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename">resources/clients/ResultFinalizer.bsh</stringProp>
+            <stringProp name="cacheKey"></stringProp>
+            <stringProp name="script"></stringProp>
+            <stringProp name="TestPlan.comments">The Result Finalizer Script, this appends all te results to a log file</stringProp>
+          </JSR223Sampler>
+          <hashTree/>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

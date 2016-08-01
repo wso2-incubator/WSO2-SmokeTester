@@ -92,6 +92,7 @@ function get_jmx() {
 
 function get_artefacts() {
         cp `find $ARTEFACT_LOCATION/$1/$2/ -iname "*car" -exec echo {} \;` $REPORT_LOCATION/runtime/artefacts/
+	cp `find $ARTEFACT_LOCATION/$1/$2/ -iname "*zip" -exec echo {} \;` $REPORT_LOCATION/runtime/artefacts/
 }
 
 function run_tests() {
