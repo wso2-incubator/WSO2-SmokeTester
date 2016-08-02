@@ -26,6 +26,18 @@ Please Refer the wiki section for instructions on adding new Jmeter based tests.
 ``` 
 Above will execute all the scripts which are located in TestSuites/ESB/4.9.0 
 
+To run a single script:
+Find scripts through
+```sh
+ ./run.sh list [PRODUCT NAME] [PRODUCT VERSION]
+	eg: ./run list ESB 4.9.0
+```
+running a single script
+```sh
+ ./run.sh -p [PRODUCT NAME] -v [PRODUCT VERSION] -s [SCRIPT NAME]
+        eg: ./run.sh -p ESB -v 4.9.0 -s Address_Endpoint
+```
+
 ##### Running Without properties
  If you execute the script without parsing any parameters as shown below. It will execute all the scrits included in the testscripts/scripts directory.
 ```sh
