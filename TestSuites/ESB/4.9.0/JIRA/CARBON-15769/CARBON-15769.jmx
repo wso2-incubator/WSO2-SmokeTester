@@ -358,84 +358,98 @@
                       <stringProp name="Argument.name">https</stringProp>
                       <stringProp name="Argument.value">https</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="serviceParams" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">serviceParams</stringProp>
                       <stringProp name="Argument.value"></stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="inSeqOp" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">inSeqOp</stringProp>
                       <stringProp name="Argument.value">none</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="proxy.in.registry" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">proxy.in.registry</stringProp>
                       <stringProp name="Argument.value"></stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="inImportSeq" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">inImportSeq</stringProp>
                       <stringProp name="Argument.value">None</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="epOp" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">epOp</stringProp>
                       <stringProp name="Argument.value">none</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="proxy.epr.registry" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">proxy.epr.registry</stringProp>
                       <stringProp name="Argument.value"></stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="importEp" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">importEp</stringProp>
                       <stringProp name="Argument.value">None</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="outSeqOp" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">outSeqOp</stringProp>
                       <stringProp name="Argument.value">none</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="proxy.out.registry" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">proxy.out.registry</stringProp>
                       <stringProp name="Argument.value"></stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="outImportSeq" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">outImportSeq</stringProp>
                       <stringProp name="Argument.value">None</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="faultSeqOp" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">faultSeqOp</stringProp>
                       <stringProp name="Argument.value">none</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="proxy.fault.registry" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">proxy.fault.registry</stringProp>
                       <stringProp name="Argument.value"></stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="faultImportSeq" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">faultImportSeq</stringProp>
                       <stringProp name="Argument.value">None</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                   </collectionProp>
                 </elementProp>
@@ -617,7 +631,7 @@
               </HTTPSamplerProxy>
               <hashTree>
                 <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Delay" enabled="true">
-                  <stringProp name="ConstantTimer.delay">30000</stringProp>
+                  <stringProp name="ConstantTimer.delay">45000</stringProp>
                 </ConstantTimer>
                 <hashTree/>
               </hashTree>

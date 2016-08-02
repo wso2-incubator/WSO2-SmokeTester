@@ -89,6 +89,16 @@
                 <stringProp name="Argument.value">ESBJAVA-4486_1.0.0.car</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
+              <elementProp name="mqtt_host" elementType="Argument">
+                <stringProp name="Argument.name">mqtt_host</stringProp>
+                <stringProp name="Argument.value">192.168.48.231</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="mqtt_port" elementType="Argument">
+                <stringProp name="Argument.name">mqtt_port</stringProp>
+                <stringProp name="Argument.value">1844</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
             </collectionProp>
             <stringProp name="TestPlan.comments">Test Related Properties are listed here</stringProp>
           </Arguments>
@@ -194,8 +204,8 @@
                     </elementProp>
                   </collectionProp>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">localhost</stringProp>
-                <stringProp name="HTTPSampler.port">9443</stringProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
                 <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -222,8 +232,8 @@
                     </elementProp>
                   </collectionProp>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">localhost</stringProp>
-                <stringProp name="HTTPSampler.port">9443</stringProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
                 <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -250,8 +260,8 @@
                     </elementProp>
                   </collectionProp>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">localhost</stringProp>
-                <stringProp name="HTTPSampler.port">9443</stringProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
                 <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -285,8 +295,8 @@
                     </elementProp>
                   </collectionProp>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">localhost</stringProp>
-                <stringProp name="HTTPSampler.port">9443</stringProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
                 <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -310,7 +320,7 @@
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="MQTT Message Processing" enabled="true"/>
             <hashTree>
               <org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler guiclass="org.apache.jmeter.protocol.mqtt.control.gui.MQTTPublisherGui" testclass="org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler" testname="MQTT Publisher 1" enabled="true">
-                <stringProp name="mqtt.broker.url">tcp://192.168.48.231:1883</stringProp>
+                <stringProp name="mqtt.broker.url">tcp://${mqtt_host}:${mqtt_port}</stringProp>
                 <stringProp name="mqtt.client.id"></stringProp>
                 <stringProp name="mqtt.topic.name">esb/test1</stringProp>
                 <boolProp name="mqtt.message.retained">false</boolProp>
@@ -325,7 +335,7 @@
               </org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler>
               <hashTree/>
               <org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler guiclass="org.apache.jmeter.protocol.mqtt.control.gui.MQTTPublisherGui" testclass="org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler" testname="MQTT Publisher 2" enabled="true">
-                <stringProp name="mqtt.broker.url">tcp://192.168.48.231:1883</stringProp>
+                <stringProp name="mqtt.broker.url">tcp://${mqtt_host}:${mqtt_port}</stringProp>
                 <stringProp name="mqtt.client.id"></stringProp>
                 <stringProp name="mqtt.topic.name">esb/test2</stringProp>
                 <boolProp name="mqtt.message.retained">false</boolProp>
@@ -340,7 +350,7 @@
               </org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler>
               <hashTree/>
               <org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler guiclass="org.apache.jmeter.protocol.mqtt.control.gui.MQTTPublisherGui" testclass="org.apache.jmeter.protocol.mqtt.sampler.PublisherSampler" testname="MQTT Publisher 3" enabled="true">
-                <stringProp name="mqtt.broker.url">tcp://192.168.48.231:1883</stringProp>
+                <stringProp name="mqtt.broker.url">tcp://${mqtt_host}:${mqtt_port}</stringProp>
                 <stringProp name="mqtt.client.id"></stringProp>
                 <stringProp name="mqtt.topic.name">esb/test3</stringProp>
                 <boolProp name="mqtt.message.retained">false</boolProp>
@@ -550,7 +560,7 @@
             </LoopController>
             <hashTree>
               <org.apache.jmeter.protocol.mqtt.sampler.SubscriberSampler guiclass="org.apache.jmeter.protocol.mqtt.control.gui.MQTTSubscriberGui" testclass="org.apache.jmeter.protocol.mqtt.sampler.SubscriberSampler" testname="MQTT Subscriber to verify messages" enabled="true">
-                <stringProp name="mqtt.broker.url">tcp://192.168.48.231:1883</stringProp>
+                <stringProp name="mqtt.broker.url">tcp://${mqtt_host}:${mqtt_port}</stringProp>
                 <stringProp name="mqtt.client.id"></stringProp>
                 <stringProp name="mqtt.topic.name">esb/#</stringProp>
                 <boolProp name="mqtt.clean.session">false</boolProp>

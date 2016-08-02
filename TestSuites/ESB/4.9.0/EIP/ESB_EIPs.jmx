@@ -231,8 +231,8 @@
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deploy ESB Artifacts - calling carbonapp" enabled="true">
                 <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                   <collectionProp name="HTTPFileArgs.files">
-                    <elementProp name="${cAppLocation}/${EIP01cAppName}.car" elementType="HTTPFileArg">
-                      <stringProp name="File.path">${cAppLocation}/${EIP01cAppName}.car</stringProp>
+                    <elementProp name="${EIP01cAppName}.car" elementType="HTTPFileArg">
+                      <stringProp name="File.path">${EIP01cAppName}.car</stringProp>
                       <stringProp name="File.paramname">filename</stringProp>
                       <stringProp name="File.mimetype">application/octet-stream</stringProp>
                     </elementProp>
@@ -844,8 +844,8 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deploy ESB Artifacts - calling carbonapp" enabled="true">
                 <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                   <collectionProp name="HTTPFileArgs.files">
-                    <elementProp name="${cAppLocation}/${EIP02cAppName}.car" elementType="HTTPFileArg">
-                      <stringProp name="File.path">${cAppLocation}/${EIP02cAppName}.car</stringProp>
+                    <elementProp name="${EIP02cAppName}.car" elementType="HTTPFileArg">
+                      <stringProp name="File.path">${EIP02cAppName}.car</stringProp>
                       <stringProp name="File.paramname">filename</stringProp>
                       <stringProp name="File.mimetype">application/octet-stream</stringProp>
                     </elementProp>
@@ -1561,8 +1561,8 @@ xmlns:xsd=&quot;http://services.samples/xsd&quot;&gt;
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deploy ESB Artifacts - calling carbonapp" enabled="true">
                 <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                   <collectionProp name="HTTPFileArgs.files">
-                    <elementProp name="${cAppLocation}/${EIP03cAppName}.car" elementType="HTTPFileArg">
-                      <stringProp name="File.path">${cAppLocation}/${EIP03cAppName}.car</stringProp>
+                    <elementProp name="${EIP03cAppName}.car" elementType="HTTPFileArg">
+                      <stringProp name="File.path">${EIP03cAppName}.car</stringProp>
                       <stringProp name="File.paramname">filename</stringProp>
                       <stringProp name="File.mimetype">application/octet-stream</stringProp>
                     </elementProp>
@@ -2348,8 +2348,8 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deploy ESB Artifacts - calling carbonapp" enabled="true">
                 <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                   <collectionProp name="HTTPFileArgs.files">
-                    <elementProp name="${cAppLocation}/${EIP04cAppName}.car" elementType="HTTPFileArg">
-                      <stringProp name="File.path">${cAppLocation}/${EIP04cAppName}.car</stringProp>
+                    <elementProp name="${EIP04cAppName}.car" elementType="HTTPFileArg">
+                      <stringProp name="File.path">${EIP04cAppName}.car</stringProp>
                       <stringProp name="File.paramname">filename</stringProp>
                       <stringProp name="File.mimetype">application/octet-stream</stringProp>
                     </elementProp>
@@ -2949,8 +2949,8 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deploy ESB Artifacts - calling carbonapp" enabled="true">
                 <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                   <collectionProp name="HTTPFileArgs.files">
-                    <elementProp name="${cAppLocation}/${EIP05cAppName}.car" elementType="HTTPFileArg">
-                      <stringProp name="File.path">${cAppLocation}/${EIP05cAppName}.car</stringProp>
+                    <elementProp name="${EIP05cAppName}.car" elementType="HTTPFileArg">
+                      <stringProp name="File.path">${EIP05cAppName}.car</stringProp>
                       <stringProp name="File.paramname">filename</stringProp>
                       <stringProp name="File.mimetype">application/octet-stream</stringProp>
                     </elementProp>
@@ -3556,8 +3556,8 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deploy ESB Artifacts - calling carbonapp" enabled="true">
                 <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                   <collectionProp name="HTTPFileArgs.files">
-                    <elementProp name="${cAppLocation}/${EIP06cAppName}.car" elementType="HTTPFileArg">
-                      <stringProp name="File.path">${cAppLocation}/${EIP06cAppName}.car</stringProp>
+                    <elementProp name="${EIP06cAppName}.car" elementType="HTTPFileArg">
+                      <stringProp name="File.path">${EIP06cAppName}.car</stringProp>
                       <stringProp name="File.paramname">filename</stringProp>
                       <stringProp name="File.mimetype">application/octet-stream</stringProp>
                     </elementProp>
@@ -4382,8 +4382,8 @@ if(prev.getResponseDataAsString().contains(nametocheck)){
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deploy ESB Artifacts - calling carbonapp" enabled="true">
                 <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                   <collectionProp name="HTTPFileArgs.files">
-                    <elementProp name="${cAppLocation}/${EIP08cAppName}.car" elementType="HTTPFileArg">
-                      <stringProp name="File.path">${cAppLocation}/${EIP08cAppName}.car</stringProp>
+                    <elementProp name="${EIP08cAppName}.car" elementType="HTTPFileArg">
+                      <stringProp name="File.path">${EIP08cAppName}.car</stringProp>
                       <stringProp name="File.paramname">filename</stringProp>
                       <stringProp name="File.mimetype">application/octet-stream</stringProp>
                     </elementProp>
@@ -5261,8 +5261,8 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deploy ESB Artifacts - calling carbonapp" enabled="true">
                 <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                   <collectionProp name="HTTPFileArgs.files">
-                    <elementProp name="${cAppLocation}/${EIP09cAppName}.car" elementType="HTTPFileArg">
-                      <stringProp name="File.path">${cAppLocation}/${EIP09cAppName}.car</stringProp>
+                    <elementProp name="${EIP09cAppName}.car" elementType="HTTPFileArg">
+                      <stringProp name="File.path">${EIP09cAppName}.car</stringProp>
                       <stringProp name="File.paramname">filename</stringProp>
                       <stringProp name="File.mimetype">application/octet-stream</stringProp>
                     </elementProp>

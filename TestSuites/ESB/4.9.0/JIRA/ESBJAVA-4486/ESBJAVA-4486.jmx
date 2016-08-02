@@ -215,8 +215,8 @@
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deploy ESB Artifacts - calling carbonapp" enabled="true">
                 <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                   <collectionProp name="HTTPFileArgs.files">
-                    <elementProp name="${cAppLocation}/${CappName}" elementType="HTTPFileArg">
-                      <stringProp name="File.path">${cAppLocation}/${CappName}</stringProp>
+                    <elementProp name="${CappName}" elementType="HTTPFileArg">
+                      <stringProp name="File.path">${CappName}</stringProp>
                       <stringProp name="File.paramname">filename</stringProp>
                       <stringProp name="File.mimetype">application/octet-stream</stringProp>
                     </elementProp>
@@ -302,7 +302,7 @@
                 <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
               </HTTPSamplerProxy>
               <hashTree>
-                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
                   <collectionProp name="Asserion.test_strings">
                     <stringProp name="1088501792">&lt;queue name=&quot;MS001&quot;&gt;
 
@@ -316,7 +316,7 @@
                   <intProp name="Assertion.test_type">2</intProp>
                 </ResponseAssertion>
                 <hashTree/>
-                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
                   <collectionProp name="Asserion.test_strings">
                     <stringProp name="-2075678879">&lt;queue name=&quot;MS002&quot;&gt;
 
@@ -330,7 +330,7 @@
                   <intProp name="Assertion.test_type">2</intProp>
                 </ResponseAssertion>
                 <hashTree/>
-                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
                   <collectionProp name="Asserion.test_strings">
                     <stringProp name="-944892254">&lt;queue name=&quot;MS003&quot;&gt;
 
@@ -426,7 +426,7 @@
               </HTTPSamplerProxy>
               <hashTree>
                 <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Delay" enabled="true">
-                  <stringProp name="ConstantTimer.delay">20000</stringProp>
+                  <stringProp name="ConstantTimer.delay">45000</stringProp>
                 </ConstantTimer>
                 <hashTree/>
               </hashTree>
@@ -465,7 +465,7 @@
                 <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
               </HTTPSamplerProxy>
               <hashTree>
-                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
                   <collectionProp name="Asserion.test_strings">
                     <stringProp name="1088501792">&lt;queue name=&quot;MS001&quot;&gt;
 
@@ -479,7 +479,7 @@
                   <intProp name="Assertion.test_type">2</intProp>
                 </ResponseAssertion>
                 <hashTree/>
-                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
                   <collectionProp name="Asserion.test_strings">
                     <stringProp name="-2075678879">&lt;queue name=&quot;MS002&quot;&gt;
 
@@ -493,7 +493,7 @@
                   <intProp name="Assertion.test_type">2</intProp>
                 </ResponseAssertion>
                 <hashTree/>
-                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
                   <collectionProp name="Asserion.test_strings">
                     <stringProp name="-944892254">&lt;queue name=&quot;MS003&quot;&gt;
 

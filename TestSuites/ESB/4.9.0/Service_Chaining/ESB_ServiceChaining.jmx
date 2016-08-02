@@ -219,8 +219,8 @@
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Deploy ESB Artifacts - calling carbonapp" enabled="true">
                 <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                   <collectionProp name="HTTPFileArgs.files">
-                    <elementProp name="${cAppLocation}/${cAppName}.car" elementType="HTTPFileArg">
-                      <stringProp name="File.path">${cAppLocation}/${cAppName}.car</stringProp>
+                    <elementProp name="${cAppName}.car" elementType="HTTPFileArg">
+                      <stringProp name="File.path">${cAppName}.car</stringProp>
                       <stringProp name="File.paramname">filename</stringProp>
                       <stringProp name="File.mimetype">application/octet-stream</stringProp>
                     </elementProp>

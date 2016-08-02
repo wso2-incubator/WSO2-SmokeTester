@@ -49,8 +49,9 @@ function setup_testruner() {
 
 	# Create all required directories
 	mkdir -p $REPORT_LOCATION/
-	mkdir -p $REPORT_LOCATION/runtime/artefacts
+#	mkdir -p $REPORT_LOCATION/runtime/artefacts
 	mkdir -p $REPORT_LOCATION/runtime/scripts
+#        mkdir -p $REPORT_LOCATION/runtime/scripts/artefacts
 	mkdir -p $REPORT_LOCATION/reports
 	mkdir -p $REPORT_LOCATION/logs
 	mkdir -p $REPORT_LOCATION/reports/jtl
@@ -74,6 +75,11 @@ function help_message() {
 	exit
 }
 
+function list_scripts() {
+	tree -d TestSuites/$1/$2/ | grep -v CApp | grep -v BackendServices
+	exit
+}
+
 function copy_3rdparty_libs() {
 	if [ "$JMETER_HOME" != "" ];then
 		log "WARNING" "The script will update your Jmeter instance!"
@@ -91,8 +97,33 @@ function get_jmx() {
 }
 
 function get_artefacts() {
-        cp `find $ARTEFACT_LOCATION/$1/$2/ -iname "*car" -exec echo {} \;` $REPORT_LOCATION/runtime/artefacts/
-	cp `find $ARTEFACT_LOCATION/$1/$2/ -iname "*zip" -exec echo {} \;` $REPORT_LOCATION/runtime/artefacts/
+	if [[ `find $ARTEFACT_LOCATION/$1/$2/ -iname "*car" -exec echo {} \;` ]]; then
+		cp `find $ARTEFACT_LOCATION/$1/$2/ -iname "*car" -exec echo {} \;` $REPORT_LOCATION/runtime/scripts/
+	fi
+
+	if [[ `find $ARTEFACT_LOCATION/$1/$2/ -iname "*zip" -exec echo {} \;` ]]; then
+		cp `find $ARTEFACT_LOCATION/$1/$2/ -iname "*zip" -exec echo {} \;` $REPORT_LOCATION/runtime/scripts/
+	fi
+}
+
+function get_singlerun() {
+	FILE_LOCATION=`find TestSuites/$1/$2/ -iname "$3" -exec echo {} \;`
+	if [[ $FILE_LOCATION ]]; then
+		if [[ !`find $FILE_LOCATION -iname "*jmx" -exec echo {} \;` ]]; then
+			cp `find $FILE_LOCATION -iname "*jmx" -exec echo {} \;` $REPORT_LOCATION/runtime/scripts/
+		fi
+	
+		if [[ `find $FILE_LOCATION -iname "*car" -exec echo {} \;` ]]; then
+			cp `find $FILE_LOCATION -iname "*car" -exec echo {} \;` $REPORT_LOCATION/runtime/scripts/
+		fi
+	
+		if [[ `find $FILE_LOCATION -iname "*zip" -exec echo {} \;` ]]; then
+			cp `find $FILE_LOCATION -iname "*zip" -exec echo {} \;` $REPORT_LOCATION/runtime/scripts/
+		fi
+	else
+		log "ERROR" "No script named $3 found for testing"
+		exit 1
+	fi
 }
 
 function run_tests() {
@@ -101,7 +132,7 @@ function run_tests() {
 	# Running the Jmeter Scripts
 	for x in $1/*.jmx; do
   		log "INFO" "Running the Script $x"
-		sh $JMETER_HOME/bin/jmeter.sh -n -t $x -l $REPORT_LOCATION/reports/jtl/test.jtl
+		sh $JMETER_HOME/bin/jmeter.sh -n -t $x -l $REPORT_LOCATION/reports/jtl/test.jtl > /dev/null 2>&1
 	done
 	log "INFO" "Test run completed"
 }
@@ -123,7 +154,12 @@ if [ "$1" == "clean" ];then
 	exit
 fi
 
-log "INFO" "Starting WSO2 Smoke Tester"
+if [ "$1" == "list" ];then
+	list_scripts $2 $3
+fi
+
+
+log "INFO" "Starting $APP_NAME $APP_VERSION"
 clean_setup
 copy_3rdparty_libs
 
@@ -160,7 +196,10 @@ if [ "$PRODUCT" != "" ] && [ "$VERSION" != "" ] && [ "$SCRIPT" == "" ]; then
 
 elif [ "$PRODUCT" != "" ] && [ "$VERSION" != "" ] && [ "$SCRIPT" != "" ]; then
 	log "INFO" "Running $SCRIPT in $PRODUCT $VERSION"
-	log "ERROR" "Individual script running is Not Suported in this version of WSO2 Smoke Tester"
+	get_singlerun $PRODUCT $VERSION $SCRIPT
+	sleep 3
+	run_tests $REPORT_LOCATION/runtime/scripts
+	generate_report $PRODUCT $VERSION
 fi
 
 log "INFO" "WSO2 Smoke Tester tests completed, You can find the Test Report at target/reports/html"
