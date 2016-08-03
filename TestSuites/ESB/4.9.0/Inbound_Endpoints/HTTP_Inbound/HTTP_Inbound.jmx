@@ -112,6 +112,11 @@
               <stringProp name="Argument.value">true</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="service_host" elementType="Argument">
+              <stringProp name="Argument.name">service_host</stringProp>
+              <stringProp name="Argument.value">esb.wso2.org</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
           </collectionProp>
           <stringProp name="TestPlan.comments">Test Related Properties are listed here</stringProp>
         </Arguments>

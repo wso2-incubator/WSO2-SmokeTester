@@ -83,7 +83,18 @@
           </HeaderManager>
           <hashTree/>
           <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Test Level Properties" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="broker_host" elementType="Argument">
+                <stringProp name="Argument.name">broker_host</stringProp>
+                <stringProp name="Argument.value">192.168.48.231</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="broker_port" elementType="Argument">
+                <stringProp name="Argument.name">broker_port</stringProp>
+                <stringProp name="Argument.value">9092</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
             <stringProp name="TestPlan.comments">Test Related Properties are listed here</stringProp>
           </Arguments>
           <hashTree/>
@@ -632,7 +643,7 @@
                     <elementProp name="sequenceXML" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">sequenceXML</stringProp>
-                      <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; &lt;sequence name=&quot;KafkaSequence&quot; trace=&quot;enable&quot; xmlns=&quot;http://ws.apache.org/ns/synapse&quot;&gt;     &lt;property name=&quot;OUT_ONLY&quot; scope=&quot;default&quot; type=&quot;BOOLEAN&quot; value=&quot;true&quot;/&gt;     &lt;property name=&quot;messageType&quot; scope=&quot;axis2&quot; type=&quot;STRING&quot; value=&quot;application/json&quot;/&gt;     &lt;kafkaTransport.init&gt;         &lt;brokerList&gt;localhost:9092&lt;/brokerList&gt;         &lt;clientId&gt;wso2esb&lt;/clientId&gt;     &lt;/kafkaTransport.init&gt;     &lt;kafkaTransport.publishMessages&gt;         &lt;topic&gt;kafkatopic&lt;/topic&gt;     &lt;/kafkaTransport.publishMessages&gt; &lt;/sequence&gt;</stringProp>
+                      <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; &lt;sequence name=&quot;KafkaSequence&quot; trace=&quot;enable&quot; xmlns=&quot;http://ws.apache.org/ns/synapse&quot;&gt;     &lt;property name=&quot;OUT_ONLY&quot; scope=&quot;default&quot; type=&quot;BOOLEAN&quot; value=&quot;true&quot;/&gt;     &lt;property name=&quot;messageType&quot; scope=&quot;axis2&quot; type=&quot;STRING&quot; value=&quot;application/json&quot;/&gt;     &lt;kafkaTransport.init&gt;         &lt;brokerList&gt;${broker_host}:${broker_port}&lt;/brokerList&gt;         &lt;clientId&gt;wso2esb&lt;/clientId&gt;     &lt;/kafkaTransport.init&gt;     &lt;kafkaTransport.publishMessages&gt;         &lt;topic&gt;kafkatopic&lt;/topic&gt;     &lt;/kafkaTransport.publishMessages&gt; &lt;/sequence&gt;</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
@@ -1001,66 +1012,77 @@
                       <stringProp name="Argument.name">proxy.in.registry</stringProp>
                       <stringProp name="Argument.value"></stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="inImportSeq" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">inImportSeq</stringProp>
                       <stringProp name="Argument.value">None</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="epOp" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">epOp</stringProp>
                       <stringProp name="Argument.value">none</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="proxy.epr.registry" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">proxy.epr.registry</stringProp>
                       <stringProp name="Argument.value"></stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="importEp" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">importEp</stringProp>
                       <stringProp name="Argument.value">None</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="outSeqOp" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">outSeqOp</stringProp>
                       <stringProp name="Argument.value">none</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="proxy.out.registry" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">proxy.out.registry</stringProp>
                       <stringProp name="Argument.value"></stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="outImportSeq" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">outImportSeq</stringProp>
                       <stringProp name="Argument.value">None</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="faultSeqOp" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">faultSeqOp</stringProp>
                       <stringProp name="Argument.value">none</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="proxy.fault.registry" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">proxy.fault.registry</stringProp>
                       <stringProp name="Argument.value"></stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                     <elementProp name="faultImportSeq" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">faultImportSeq</stringProp>
                       <stringProp name="Argument.value">None</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
                   </collectionProp>
                 </elementProp>
@@ -1390,7 +1412,7 @@
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                   <collectionProp name="Arguments.arguments"/>
                 </elementProp>
-                <stringProp name="SoapSampler.URL_DATA">http://localhost:8280/services/KafkaProxy.KafkaProxyHttpSoap11Endpoint</stringProp>
+                <stringProp name="SoapSampler.URL_DATA">http://${service_host}:${http_serviceport}/services/KafkaProxy.KafkaProxyHttpSoap11Endpoint</stringProp>
                 <stringProp name="HTTPSamper.xml_data">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:ser=&quot;http://services.samples&quot;&gt;
    &lt;soapenv:Header/&gt;
    &lt;soapenv:Body&gt;
@@ -1537,7 +1559,7 @@
                     <elementProp name="rawConfig" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
                       <stringProp name="Argument.name">rawConfig</stringProp>
-                      <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; &lt;definitions xmlns=&quot;http://ws.apache.org/ns/synapse&quot;&gt;     &lt;registry provider=&quot;org.wso2.carbon.mediation.registry.WSO2Registry&quot;&gt;         &lt;parameter name=&quot;cachableDuration&quot;&gt;15000&lt;/parameter&gt;     &lt;/registry&gt;     &lt;taskManager provider=&quot;org.wso2.carbon.mediation.ntask.NTaskTaskManager&quot;/&gt;     &lt;import name=&quot;kafkaTransport&quot; package=&quot;org.wso2.carbon.connector&quot; status=&quot;enabled&quot;/&gt;     &lt;proxy name=&quot;KafkaProxy&quot; startOnLoad=&quot;true&quot; trace=&quot;disable&quot; transports=&quot;http https&quot;&gt;         &lt;description/&gt;         &lt;target inSequence=&quot;KafkaSequence&quot;/&gt;         &lt;publishWSDL uri=&quot;http://192.168.48.231:9781/services/SimpleStockQuoteService?wsdl&quot;/&gt;     &lt;/proxy&gt;     &lt;sequence name=&quot;fault&quot;&gt;         &lt;!-- Log the message at the full log level with the ERROR_MESSAGE and the ERROR_CODE--&gt;         &lt;log level=&quot;full&quot;&gt;             &lt;property name=&quot;MESSAGE&quot; value=&quot;Executing default &apos;fault&apos; sequence&quot;/&gt;             &lt;property expression=&quot;get-property(&apos;ERROR_CODE&apos;)&quot; name=&quot;ERROR_CODE&quot;/&gt;             &lt;property expression=&quot;get-property(&apos;ERROR_MESSAGE&apos;)&quot; name=&quot;ERROR_MESSAGE&quot;/&gt;         &lt;/log&gt;         &lt;!-- Drops the messages by default if there is a fault --&gt;         &lt;drop/&gt;     &lt;/sequence&gt;     &lt;sequence name=&quot;main&quot;&gt;         &lt;in&gt;             &lt;!-- Log all messages passing through --&gt;             &lt;log level=&quot;full&quot;/&gt;             &lt;!-- ensure that the default configuration only sends if it is one of samples --&gt;             &lt;!-- Otherwise Synapse would be an open proxy by default (BAD!)               --&gt;             &lt;filter regex=&quot;http://localhost:9000.*&quot; source=&quot;get-property(&apos;To&apos;)&quot;&gt;                 &lt;!-- Send the messages where they have been sent (i.e. implicit &quot;To&quot; EPR) --&gt;                 &lt;send/&gt;             &lt;/filter&gt;         &lt;/in&gt;         &lt;out&gt;             &lt;send/&gt;         &lt;/out&gt;         &lt;description&gt;The main sequence for the message mediation&lt;/description&gt;     &lt;/sequence&gt;     &lt;sequence name=&quot;KafkaSequence&quot; onError=&quot;fault&quot; trace=&quot;enable&quot;&gt;         &lt;property name=&quot;OUT_ONLY&quot; scope=&quot;default&quot; type=&quot;BOOLEAN&quot; value=&quot;true&quot;/&gt;         &lt;property name=&quot;messageType&quot; scope=&quot;axis2&quot; type=&quot;STRING&quot; value=&quot;application/json&quot;/&gt;         &lt;kafkaTransport.init&gt;             &lt;brokerList&gt;localhost:9092&lt;/brokerList&gt;             &lt;clientId&gt;wso2esb&lt;/clientId&gt;         &lt;/kafkaTransport.init&gt;         &lt;kafkaTransport.publishMessages&gt;             &lt;topic&gt;kafkatopic&lt;/topic&gt;         &lt;/kafkaTransport.publishMessages&gt;     &lt;/sequence&gt;     &lt;!-- You can add any flat sequences, endpoints, etc.. to this synapse.xml file if you do     *not* want to keep the artifacts in several files --&gt; &lt;/definitions&gt;</stringProp>
+                      <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; &lt;definitions xmlns=&quot;http://ws.apache.org/ns/synapse&quot;&gt;    &lt;registry provider=&quot;org.wso2.carbon.mediation.registry.WSO2Registry&quot;&gt;       &lt;parameter name=&quot;cachableDuration&quot;&gt;15000&lt;/parameter&gt;    &lt;/registry&gt;    &lt;taskManager provider=&quot;org.wso2.carbon.mediation.ntask.NTaskTaskManager&quot; /&gt;    &lt;import name=&quot;kafkaTransport&quot; package=&quot;org.wso2.carbon.connector&quot; status=&quot;enabled&quot; /&gt;    &lt;proxy name=&quot;KafkaProxy&quot; startOnLoad=&quot;true&quot; trace=&quot;disable&quot; transports=&quot;http https&quot;&gt;       &lt;description /&gt;       &lt;target inSequence=&quot;KafkaSequence&quot; /&gt;       &lt;publishWSDL uri=&quot;${backend_host_port}/services/SimpleStockQuoteService?wsdl&quot; /&gt;    &lt;/proxy&gt;    &lt;sequence name=&quot;fault&quot;&gt;       &lt;!-- Log the message at the full log level with the ERROR_MESSAGE and the ERROR_CODE--&gt;       &lt;log level=&quot;full&quot;&gt;          &lt;property name=&quot;MESSAGE&quot; value=&quot;Executing default &apos;fault&apos; sequence&quot; /&gt;          &lt;property expression=&quot;get-property(&apos;ERROR_CODE&apos;)&quot; name=&quot;ERROR_CODE&quot; /&gt;          &lt;property expression=&quot;get-property(&apos;ERROR_MESSAGE&apos;)&quot; name=&quot;ERROR_MESSAGE&quot; /&gt;       &lt;/log&gt;       &lt;!-- Drops the messages by default if there is a fault --&gt;       &lt;drop /&gt;    &lt;/sequence&gt;    &lt;sequence name=&quot;main&quot;&gt;       &lt;in&gt;          &lt;!-- Log all messages passing through --&gt;          &lt;log level=&quot;full&quot; /&gt;          &lt;!-- ensure that the default configuration only sends if it is one of samples --&gt;          &lt;!-- Otherwise Synapse would be an open proxy by default (BAD!)               --&gt;          &lt;filter regex=&quot;http://localhost:9000.*&quot; source=&quot;get-property(&apos;To&apos;)&quot;&gt;             &lt;!-- Send the messages where they have been sent (i.e. implicit &quot;To&quot; EPR) --&gt;             &lt;send /&gt;          &lt;/filter&gt;       &lt;/in&gt;       &lt;out&gt;          &lt;send /&gt;       &lt;/out&gt;       &lt;description&gt;The main sequence for the message mediation&lt;/description&gt;    &lt;/sequence&gt;    &lt;sequence name=&quot;KafkaSequence&quot; onError=&quot;fault&quot; trace=&quot;enable&quot;&gt;       &lt;property name=&quot;OUT_ONLY&quot; scope=&quot;default&quot; type=&quot;BOOLEAN&quot; value=&quot;true&quot; /&gt;       &lt;property name=&quot;messageType&quot; scope=&quot;axis2&quot; type=&quot;STRING&quot; value=&quot;application/json&quot; /&gt;       &lt;kafkaTransport.init&gt;          &lt;brokerList&gt;${broker_host}:${broker_port}&lt;/brokerList&gt;          &lt;clientId&gt;wso2esb&lt;/clientId&gt;       &lt;/kafkaTransport.init&gt;       &lt;kafkaTransport.publishMessages&gt;          &lt;topic&gt;kafkatopic&lt;/topic&gt;       &lt;/kafkaTransport.publishMessages&gt;    &lt;/sequence&gt;    &lt;!-- You can add any flat sequences, endpoints, etc.. to this synapse.xml file if you do     *not* want to keep the artifacts in several files --&gt; &lt;/definitions&gt;</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     </elementProp>
@@ -1661,7 +1683,7 @@
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                   <collectionProp name="Arguments.arguments"/>
                 </elementProp>
-                <stringProp name="SoapSampler.URL_DATA">http://localhost:8280/services/KafkaProxy.KafkaProxyHttpSoap11Endpoint</stringProp>
+                <stringProp name="SoapSampler.URL_DATA">http://${service_host}:${http_serviceport}/services/KafkaProxy.KafkaProxyHttpSoap11Endpoint</stringProp>
                 <stringProp name="HTTPSamper.xml_data">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:ser=&quot;http://services.samples&quot;&gt;
    &lt;soapenv:Header/&gt;
    &lt;soapenv:Body&gt;
