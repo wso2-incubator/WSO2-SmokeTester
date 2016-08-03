@@ -233,8 +233,8 @@
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="30 /fileupload/mediationlib" enabled="true">
                 <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                   <collectionProp name="HTTPFileArgs.files">
-                    <elementProp name="${cAppLocation}/kafkaTransport-connector-1.0.0.zip" elementType="HTTPFileArg">
-                      <stringProp name="File.path">${cAppLocation}/kafkaTransport-connector-1.0.0.zip</stringProp>
+                    <elementProp name="kafkaTransport-connector-1.0.0.zip" elementType="HTTPFileArg">
+                      <stringProp name="File.path">kafkaTransport-connector-1.0.0.zip</stringProp>
                       <stringProp name="File.paramname">filename</stringProp>
                       <stringProp name="File.mimetype">application/zip</stringProp>
                     </elementProp>

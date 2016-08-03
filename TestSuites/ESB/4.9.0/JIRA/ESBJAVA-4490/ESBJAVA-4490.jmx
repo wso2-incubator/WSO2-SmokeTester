@@ -269,7 +269,7 @@
               </HTTPSamplerProxy>
               <hashTree>
                 <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
-                  <stringProp name="ConstantTimer.delay">20000</stringProp>
+                  <stringProp name="ConstantTimer.delay">45000</stringProp>
                 </ConstantTimer>
                 <hashTree/>
                 <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">

@@ -3886,6 +3886,10 @@
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Delay request" enabled="true">
+                  <stringProp name="ConstantTimer.delay">30000</stringProp>
+                </ConstantTimer>
+                <hashTree/>
               </hashTree>
             </hashTree>
           </hashTree>
@@ -4900,12 +4904,7 @@
               <stringProp name="SoapSampler.SEND_SOAP_ACTION">true</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
             </SoapSampler>
-            <hashTree>
-              <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Delay request" enabled="true">
-                <stringProp name="ConstantTimer.delay">5000</stringProp>
-              </ConstantTimer>
-              <hashTree/>
-            </hashTree>
+            <hashTree/>
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="RabbitMQ CleanUp" enabled="true"/>
             <hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Cleanup - index.jsp" enabled="true">
@@ -5305,6 +5304,10 @@
                     </elementProp>
                   </collectionProp>
                 </HeaderManager>
+                <hashTree/>
+                <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Delay request" enabled="true">
+                  <stringProp name="ConstantTimer.delay">30000</stringProp>
+                </ConstantTimer>
                 <hashTree/>
               </hashTree>
             </hashTree>
@@ -7061,7 +7064,12 @@
                 <boolProp name="HTTPSampler.monitor">false</boolProp>
                 <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
               </HTTPSamplerProxy>
-              <hashTree/>
+              <hashTree>
+                <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Delay request" enabled="true">
+                  <stringProp name="ConstantTimer.delay">30000</stringProp>
+                </ConstantTimer>
+                <hashTree/>
+              </hashTree>
             </hashTree>
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="LogOut" enabled="true"/>
