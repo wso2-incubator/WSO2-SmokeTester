@@ -417,12 +417,12 @@
                 </HeaderManager>
                 <hashTree/>
                 <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Delay" enabled="true">
-                  <stringProp name="ConstantTimer.delay">5000</stringProp>
+                  <stringProp name="ConstantTimer.delay">30000</stringProp>
                 </ConstantTimer>
                 <hashTree/>
               </hashTree>
             </hashTree>
-            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Deploy Services" enabled="true"/>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Invoke HL7 requests" enabled="true"/>
             <hashTree>
               <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="Send Valid HL7 message" enabled="true">
                 <stringProp name="TCPSampler.classname">nl.avisi.jmeter.mllpsampler.MllpTCPClient</stringProp>
@@ -699,7 +699,7 @@
                 </HeaderManager>
                 <hashTree/>
                 <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Delay" enabled="true">
-                  <stringProp name="ConstantTimer.delay">5000</stringProp>
+                  <stringProp name="ConstantTimer.delay">30000</stringProp>
                 </ConstantTimer>
                 <hashTree/>
               </hashTree>

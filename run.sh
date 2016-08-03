@@ -49,9 +49,7 @@ function setup_testruner() {
 
 	# Create all required directories
 	mkdir -p $REPORT_LOCATION/
-#	mkdir -p $REPORT_LOCATION/runtime/artefacts
 	mkdir -p $REPORT_LOCATION/runtime/scripts
-#        mkdir -p $REPORT_LOCATION/runtime/scripts/artefacts
 	mkdir -p $REPORT_LOCATION/reports
 	mkdir -p $REPORT_LOCATION/logs
 	mkdir -p $REPORT_LOCATION/reports/jtl
@@ -156,6 +154,7 @@ fi
 
 if [ "$1" == "list" ];then
 	list_scripts $2 $3
+	exit 1
 fi
 
 
