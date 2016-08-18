@@ -74,7 +74,7 @@ function help_message() {
 }
 
 function list_scripts() {
-	tree -d TestSuites/$1/$2/ | grep -v CApp | grep -v BackendServices
+	tree -d test-suites/$1/$2/ | grep -v CApp | grep -v BackendServices
 	exit
 }
 
@@ -105,7 +105,7 @@ function get_artefacts() {
 }
 
 function get_singlerun() {
-	FILE_LOCATION=`find TestSuites/$1/$2/ -iname "$3" -exec echo {} \;`
+	FILE_LOCATION=`find test-suites/$1/$2/ -iname "$3" -exec echo {} \;`
 	if [[ $FILE_LOCATION ]]; then
 		if [[ !`find $FILE_LOCATION -iname "*jmx" -exec echo {} \;` ]]; then
 			cp `find $FILE_LOCATION -iname "*jmx" -exec echo {} \;` $REPORT_LOCATION/runtime/scripts/

@@ -24,7 +24,7 @@ Please Refer the wiki section for instructions on adding new Jmeter based tests.
  ./run.sh -p [PRODUCT NAME] -v [PRODUCT VERSION]
 	eg: ./run.sh -p ESB -v 4.9.0
 ``` 
-Above will execute all the scripts which are located in TestSuites/ESB/4.9.0 
+Above will execute all the scripts which are located in test-suites/ESB/4.9.0 
 
 To run a single script:
 Find scripts through
