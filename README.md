@@ -1,4 +1,4 @@
-# WSO2ESB-SmokeTester
+# QA Tooling - Smoke Tester
 
 A Jmeter Script based testing client. This tool is a Jmeter test wrapper and it will run multiple Jmeter files and generate reports out from them. 
 
