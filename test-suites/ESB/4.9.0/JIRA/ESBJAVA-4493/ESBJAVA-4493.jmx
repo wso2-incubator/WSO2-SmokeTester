@@ -27,22 +27,17 @@
           </elementProp>
           <elementProp name="http_serviceport" elementType="Argument">
             <stringProp name="Argument.name">http_serviceport</stringProp>
-            <stringProp name="Argument.value">8280</stringProp>
+            <stringProp name="Argument.value">80</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="https_serviceport" elementType="Argument">
             <stringProp name="Argument.name">https_serviceport</stringProp>
-            <stringProp name="Argument.value">8243</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="mgt_https_port" elementType="Argument">
-            <stringProp name="Argument.name">mgt_https_port</stringProp>
-            <stringProp name="Argument.value">9453</stringProp>
+            <stringProp name="Argument.value">443</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="service_host" elementType="Argument">
             <stringProp name="Argument.name">service_host</stringProp>
-            <stringProp name="Argument.value">localhost</stringProp>
+            <stringProp name="Argument.value">esb.wso2.org</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="username" elementType="Argument">
@@ -1583,7 +1578,7 @@
                   <elementProp name="transport.vfs.FileURI" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">transport.vfs.FileURI</stringProp>
-                    <stringProp name="Argument.value">ftp://${ftpuser}:${ftppassword}@${ftphost}${remotelocation}?vfs.passive=true</stringProp>
+                    <stringProp name="Argument.value">ftp://${ftpuser}:${ftppassword}@${ftphost}/${remotelocation}?vfs.passive=true</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -1669,6 +1664,7 @@
                     <stringProp name="Argument.name">transport.vfs.MoveTimestampFormat</stringProp>
                     <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="transport.vfs.AutoLockRelease" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
