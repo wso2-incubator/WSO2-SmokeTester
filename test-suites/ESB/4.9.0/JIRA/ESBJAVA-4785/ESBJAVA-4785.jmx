@@ -652,7 +652,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="SoapSampler.URL_DATA">${service_host}:${http_serviceport}/</stringProp>
+              <stringProp name="SoapSampler.URL_DATA">${service_host}:${http_serviceport}/services/RabbitMQRPCProxy</stringProp>
               <stringProp name="HTTPSamper.xml_data">&lt;body/&gt;</stringProp>
               <stringProp name="SoapSampler.xml_data_file"></stringProp>
               <stringProp name="SoapSampler.SOAP_ACTION">urn:mediate</stringProp>
