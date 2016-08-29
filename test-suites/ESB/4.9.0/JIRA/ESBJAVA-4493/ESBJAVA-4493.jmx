@@ -183,17 +183,17 @@
           </elementProp>
           <elementProp name="ftpuser" elementType="Argument">
             <stringProp name="Argument.name">ftpuser</stringProp>
-            <stringProp name="Argument.value">wso2qa</stringProp>
+            <stringProp name="Argument.value">wso2</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="ftppass" elementType="Argument">
             <stringProp name="Argument.name">ftppass</stringProp>
-            <stringProp name="Argument.value">wso2qa123</stringProp>
+            <stringProp name="Argument.value">wso2123</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="ftplocation" elementType="Argument">
             <stringProp name="Argument.name">ftplocation</stringProp>
-            <stringProp name="Argument.value">ftp://wso2qa:wso2qa123@192.168.48.231/ESBJAVA-4493/in</stringProp>
+            <stringProp name="Argument.value">ftp://wso2:wso2123@192.168.48.231/ESBJAVA-4493/in</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="ftphost" elementType="Argument">
