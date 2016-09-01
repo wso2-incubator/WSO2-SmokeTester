@@ -133,8 +133,8 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${am_mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${am_mgt_https_port}</stringProp>
+              <stringProp name="HTTPSampler.domain">${am_publisher_host}</stringProp>
+              <stringProp name="HTTPSampler.port">${am_publisher_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -388,8 +388,8 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${am_mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${am_mgt_https_port}</stringProp>
+              <stringProp name="HTTPSampler.domain">${am_publisher_host}</stringProp>
+              <stringProp name="HTTPSampler.port">${am_publisher_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -404,7 +404,12 @@
               <boolProp name="HTTPSampler.monitor">false</boolProp>
               <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
             </HTTPSamplerProxy>
-            <hashTree/>
+            <hashTree>
+              <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Delay" enabled="true">
+                <stringProp name="ConstantTimer.delay">15000</stringProp>
+              </ConstantTimer>
+              <hashTree/>
+            </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="publishAPI" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
                 <collectionProp name="Arguments.arguments">
@@ -505,8 +510,8 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${am_mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${am_mgt_https_port}</stringProp>
+              <stringProp name="HTTPSampler.domain">${am_publisher_host}</stringProp>
+              <stringProp name="HTTPSampler.port">${am_publisher_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -532,7 +537,7 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Cleanup" enabled="true"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Delete API" enabled="true"/>
           <hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1 /publisher/apis" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
@@ -553,8 +558,8 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${am_mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${am_mgt_https_port}</stringProp>
+              <stringProp name="HTTPSampler.domain">${am_publisher_host}</stringProp>
+              <stringProp name="HTTPSampler.port">${am_publisher_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -602,8 +607,8 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${am_mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${am_mgt_https_port}</stringProp>
+              <stringProp name="HTTPSampler.domain">${am_publisher_host}</stringProp>
+              <stringProp name="HTTPSampler.port">${am_publisher_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -619,7 +624,7 @@
             </HTTPSamplerProxy>
             <hashTree>
               <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Delay" enabled="true">
-                <stringProp name="ConstantTimer.delay">15000</stringProp>
+                <stringProp name="ConstantTimer.delay">10000</stringProp>
               </ConstantTimer>
               <hashTree/>
             </hashTree>
@@ -642,8 +647,8 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${am_mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${am_mgt_https_port}</stringProp>
+              <stringProp name="HTTPSampler.domain">${am_publisher_host}</stringProp>
+              <stringProp name="HTTPSampler.port">${am_publisher_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -675,8 +680,8 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${am_mgt_host}</stringProp>
-              <stringProp name="HTTPSampler.port">${am_mgt_https_port}</stringProp>
+              <stringProp name="HTTPSampler.domain">${am_publisher_host}</stringProp>
+              <stringProp name="HTTPSampler.port">${am_publisher_https_port}</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
