@@ -875,7 +875,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
             </hashTree>
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Custom Proxy - Sequence" enabled="true"/>
             <hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling list_sequences.jsp" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling list_sequences.jsp" enabled="false">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="region" elementType="HTTPArgument">
@@ -910,7 +910,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                 <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
               </HTTPSamplerProxy>
               <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling design_sequence.jsp" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling design_sequence.jsp" enabled="false">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="sequenceAction" elementType="HTTPArgument">
@@ -938,7 +938,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                 <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
               </HTTPSamplerProxy>
               <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - design_sequence-ajaxprocessor.jsp" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - design_sequence-ajaxprocessor.jsp" enabled="false">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="position" elementType="HTTPArgument">
@@ -1001,7 +1001,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                 <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
               </HTTPSamplerProxy>
               <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - mediator-edit-ajaxprocessor.jsp" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - mediator-edit-ajaxprocessor.jsp" enabled="false">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="mediatorID" elementType="HTTPArgument">
@@ -1029,7 +1029,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                 <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
               </HTTPSamplerProxy>
               <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - ns_editor-ajaxprocessor.jsp" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - ns_editor-ajaxprocessor.jsp" enabled="false">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="currentID" elementType="HTTPArgument">
@@ -1070,7 +1070,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                 <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
               </HTTPSamplerProxy>
               <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - ns_save-ajaxprocessor.jsp" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - ns_save-ajaxprocessor.jsp" enabled="false">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="null" elementType="HTTPArgument">
@@ -1125,7 +1125,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                 <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
               </HTTPSamplerProxy>
               <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - mediator-update-ajaxprocessor.jsp" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - mediator-update-ajaxprocessor.jsp" enabled="false">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="mediator.log.category" elementType="HTTPArgument">
@@ -1244,7 +1244,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                 <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
               </HTTPSamplerProxy>
               <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - design_sequence-ajaxprocessor.jsp" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - design_sequence-ajaxprocessor.jsp" enabled="false">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="position" elementType="HTTPArgument">
@@ -1307,7 +1307,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                 <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
               </HTTPSamplerProxy>
               <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - mediator-edit-ajaxprocessor.jsp" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - mediator-edit-ajaxprocessor.jsp" enabled="false">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="mediatorID" elementType="HTTPArgument">
@@ -1335,7 +1335,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                 <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
               </HTTPSamplerProxy>
               <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - ns_editor-ajaxprocessor.jsp" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - ns_editor-ajaxprocessor.jsp" enabled="false">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="currentID" elementType="HTTPArgument">
@@ -1376,7 +1376,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                 <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
               </HTTPSamplerProxy>
               <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - ns_save-ajaxprocessor.jsp" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - ns_save-ajaxprocessor.jsp" enabled="false">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="null" elementType="HTTPArgument">
@@ -1431,7 +1431,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                 <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
               </HTTPSamplerProxy>
               <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - mediator-update-ajaxprocessor.jsp" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - mediator-update-ajaxprocessor.jsp" enabled="false">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="mediaType" elementType="HTTPArgument">
@@ -1580,7 +1580,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                 <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
               </HTTPSamplerProxy>
               <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - design_sequence-ajaxprocessor.jsp" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - design_sequence-ajaxprocessor.jsp" enabled="false">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="position" elementType="HTTPArgument">
@@ -1643,7 +1643,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                 <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
               </HTTPSamplerProxy>
               <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - mediator-edit-ajaxprocessor.jsp" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - mediator-edit-ajaxprocessor.jsp" enabled="false">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="mediatorID" elementType="HTTPArgument">
@@ -1671,7 +1671,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                 <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
               </HTTPSamplerProxy>
               <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - mediator-update-ajaxprocessor.jsp" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - mediator-update-ajaxprocessor.jsp" enabled="false">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="epOp" elementType="HTTPArgument">
@@ -1769,7 +1769,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                 <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
               </HTTPSamplerProxy>
               <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - save_sequence.jsp" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - save_sequence.jsp" enabled="false">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="sequenceName" elementType="HTTPArgument">
@@ -1811,7 +1811,7 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                 <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
               </HTTPSamplerProxy>
               <hashTree/>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - list_sequences.jsp" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - calling - list_sequences.jsp" enabled="false">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="tab" elementType="HTTPArgument">
@@ -1869,6 +1869,1639 @@ if(!prev.getResponseDataAsString().contains(nametocheck)){
                   <stringProp name="BeanShellAssertion.parameters"></stringProp>
                   <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
                 </BeanShellAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - list_sequences.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="region" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">region</stringProp>
+                      <stringProp name="Argument.value">region1</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="item" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">item</stringProp>
+                      <stringProp name="Argument.value">sequences_menu</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/sequences/list_sequences.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://mgt.esb.wso2.org/carbon/admin/index.jsp?loginStatus=true</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - design_sequence.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="sequenceAction" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">sequenceAction</stringProp>
+                      <stringProp name="Argument.value">add</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/sequences/design_sequence.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://mgt.esb.wso2.org/carbon/sequences/list_sequences.jsp?region=region1&amp;item=sequences_menu</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - design_sequence-ajaxprocessor.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="position" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">position</stringProp>
+                      <stringProp name="Argument.value">mediator-00</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="mediatorName" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">mediatorName</stringProp>
+                      <stringProp name="Argument.value">log</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="type" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">type</stringProp>
+                      <stringProp name="Argument.value">child</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="sequenceName" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">sequenceName</stringProp>
+                      <stringProp name="Argument.value">${SequenceName}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="onErrorKey" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">onErrorKey</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="mediatorAction" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">mediatorAction</stringProp>
+                      <stringProp name="Argument.value">add</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/sequences/design_sequence-ajaxprocessor.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://mgt.esb.wso2.org/carbon/sequences/design_sequence.jsp?sequenceAction=add</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="X-Requested-With" elementType="Header">
+                      <stringProp name="Header.name">X-Requested-With</stringProp>
+                      <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">text/html, */*; q=0.01</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - mediator-edit-ajaxprocessor.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="mediatorID" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">mediatorID</stringProp>
+                      <stringProp name="Argument.value">mediator-0</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/sequences/mediator-edit-ajaxprocessor.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://mgt.esb.wso2.org/carbon/sequences/design_sequence.jsp?sequenceAction=add</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="X-Requested-With" elementType="Header">
+                      <stringProp name="Header.name">X-Requested-With</stringProp>
+                      <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">text/html, */*; q=0.01</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - ns_editor-ajaxprocessor.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="currentID" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">currentID</stringProp>
+                      <stringProp name="Argument.value">propertyValue0</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="divID" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">divID</stringProp>
+                      <stringProp name="Argument.value">nsEditor</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="null" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">null</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata"></stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/sequences/ns_editor-ajaxprocessor.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://mgt.esb.wso2.org/carbon/sequences/design_sequence.jsp?sequenceAction=add</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="X-Requested-With" elementType="Header">
+                      <stringProp name="Header.name">X-Requested-With</stringProp>
+                      <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">text/html, */*; q=0.01</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - ns_save-ajaxprocessor.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="null" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">null</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata"></stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/sequences/ns_save-ajaxprocessor.jsp?currentID=propertyValue0&amp;nsCount=3&amp;prefix0=ns&amp;uri0=http://org.apache.synapse/xsd&amp;prefix1=ns3&amp;uri1=http://org.apache.synapse/xsd&amp;prefix2=mo&amp;uri2=http://test.wso2.org</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://mgt.esb.wso2.org/carbon/sequences/design_sequence.jsp?sequenceAction=add</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="X-Requested-With" elementType="Header">
+                      <stringProp name="Header.name">X-Requested-With</stringProp>
+                      <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                    </elementProp>
+                    <elementProp name="Content-Type" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">*/*</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - ns_editor-ajaxprocessor.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="currentID" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">currentID</stringProp>
+                      <stringProp name="Argument.value">propertyValue1</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="divID" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">divID</stringProp>
+                      <stringProp name="Argument.value">nsEditor</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="null" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">null</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata"></stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding">ISO-8859-1</stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/sequences/ns_editor-ajaxprocessor.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://mgt.esb.wso2.org/carbon/sequences/design_sequence.jsp?sequenceAction=add</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="X-Requested-With" elementType="Header">
+                      <stringProp name="Header.name">X-Requested-With</stringProp>
+                      <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">text/html, */*; q=0.01</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - ns_save-ajaxprocessor.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="null" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">null</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata"></stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding">ISO-8859-1</stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/sequences/ns_save-ajaxprocessor.jsp?currentID=propertyValue1&amp;nsCount=2&amp;prefix0=ns&amp;uri0=http://org.apache.synapse/xsd&amp;prefix1=ns3&amp;uri1=http://org.apache.synapse/xsd</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://mgt.esb.wso2.org/carbon/sequences/design_sequence.jsp?sequenceAction=add</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="X-Requested-With" elementType="Header">
+                      <stringProp name="Header.name">X-Requested-With</stringProp>
+                      <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                    </elementProp>
+                    <elementProp name="Content-Type" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">*/*</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - mediator-update-ajaxprocessor.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="mediator.log.category" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">mediator.log.category</stringProp>
+                      <stringProp name="Argument.value">2</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="mediator.log.log_level" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">mediator.log.log_level</stringProp>
+                      <stringProp name="Argument.value">1</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="mediator.log.log_separator" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">mediator.log.log_separator</stringProp>
+                      <stringProp name="Argument.value">%2C+</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="propertyCount" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">propertyCount</stringProp>
+                      <stringProp name="Argument.value">2</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="propertyName0" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">propertyName0</stringProp>
+                      <stringProp name="Argument.value">ResponseProperty</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="propertyTypeSelection0" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">propertyTypeSelection0</stringProp>
+                      <stringProp name="Argument.value">expression</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="propertyValue0" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">propertyValue0</stringProp>
+                      <stringProp name="Argument.value">%2F%2Fmo%3Areturn</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="propertyName1" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">propertyName1</stringProp>
+                      <stringProp name="Argument.value">LocalTextEntry</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="propertyTypeSelection1" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">propertyTypeSelection1</stringProp>
+                      <stringProp name="Argument.value">expression</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="propertyValue1" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">propertyValue1</stringProp>
+                      <stringProp name="Argument.value">get-property(%27ESB490_TextEntry%27)</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="mediatorID" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">mediatorID</stringProp>
+                      <stringProp name="Argument.value">mediator-0</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="updatePage" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">updatePage</stringProp>
+                      <stringProp name="Argument.value">..%2Flog-mediator%2Fupdate-mediator.jsp</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="random" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">random</stringProp>
+                      <stringProp name="Argument.value">0.9291554064831088</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="followupAction" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">followupAction</stringProp>
+                      <stringProp name="Argument.value">source</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/sequences/mediator-update-ajaxprocessor.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://mgt.esb.wso2.org/carbon/sequences/design_sequence.jsp?sequenceAction=add</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="X-Requested-With" elementType="Header">
+                      <stringProp name="Header.name">X-Requested-With</stringProp>
+                      <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">*/*</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - design_sequence-ajaxprocessor.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="position" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">position</stringProp>
+                      <stringProp name="Argument.value">mediator-00</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="mediatorName" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">mediatorName</stringProp>
+                      <stringProp name="Argument.value">payloadFactory</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="type" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">type</stringProp>
+                      <stringProp name="Argument.value">child</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="sequenceName" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">sequenceName</stringProp>
+                      <stringProp name="Argument.value">${SequenceName}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="onErrorKey" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">onErrorKey</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="mediatorAction" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">mediatorAction</stringProp>
+                      <stringProp name="Argument.value">add</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding">ISO-8859-1</stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/sequences/design_sequence-ajaxprocessor.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://mgt.esb.wso2.org/carbon/sequences/design_sequence.jsp?sequenceAction=add</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="X-Requested-With" elementType="Header">
+                      <stringProp name="Header.name">X-Requested-With</stringProp>
+                      <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">text/html, */*; q=0.01</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - mediator-edit-ajaxprocessor.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="mediatorID" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">mediatorID</stringProp>
+                      <stringProp name="Argument.value">mediator-1</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding">ISO-8859-1</stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/sequences/mediator-edit-ajaxprocessor.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://mgt.esb.wso2.org/carbon/sequences/design_sequence.jsp?sequenceAction=add</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="X-Requested-With" elementType="Header">
+                      <stringProp name="Header.name">X-Requested-With</stringProp>
+                      <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">text/html, */*; q=0.01</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - ns_editor-ajaxprocessor.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="currentID" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">currentID</stringProp>
+                      <stringProp name="Argument.value">payloadFactory.argValue1</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="divID" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">divID</stringProp>
+                      <stringProp name="Argument.value">nsEditor</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="null" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">null</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata"></stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding">ISO-8859-1</stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/sequences/ns_editor-ajaxprocessor.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://mgt.esb.wso2.org/carbon/sequences/design_sequence.jsp?sequenceAction=add</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="X-Requested-With" elementType="Header">
+                      <stringProp name="Header.name">X-Requested-With</stringProp>
+                      <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">text/html, */*; q=0.01</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - ns_save-ajaxprocessor.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="null" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">null</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata"></stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding">ISO-8859-1</stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/sequences/ns_save-ajaxprocessor.jsp?currentID=payloadFactory.argValue1&amp;nsCount=3&amp;prefix0=mo&amp;uri0=http://test.wso2.org&amp;prefix1=ns&amp;uri1=http://org.apache.synapse/xsd&amp;prefix2=ns3&amp;uri2=http://org.apache.synapse/xsd</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://mgt.esb.wso2.org/carbon/sequences/design_sequence.jsp?sequenceAction=add</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="X-Requested-With" elementType="Header">
+                      <stringProp name="Header.name">X-Requested-With</stringProp>
+                      <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                    </elementProp>
+                    <elementProp name="Content-Type" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">*/*</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - ns_editor-ajaxprocessor.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="currentID" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">currentID</stringProp>
+                      <stringProp name="Argument.value">payloadFactory.argValue2</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="divID" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">divID</stringProp>
+                      <stringProp name="Argument.value">nsEditor</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="null" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">null</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata"></stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding">ISO-8859-1</stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/sequences/ns_editor-ajaxprocessor.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://mgt.esb.wso2.org/carbon/sequences/design_sequence.jsp?sequenceAction=add</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="X-Requested-With" elementType="Header">
+                      <stringProp name="Header.name">X-Requested-With</stringProp>
+                      <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">text/html, */*; q=0.01</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - ns_save-ajaxprocessor.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="null" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">null</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata"></stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding">ISO-8859-1</stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/sequences/ns_save-ajaxprocessor.jsp?currentID=payloadFactory.argValue2&amp;nsCount=2&amp;prefix0=ns&amp;uri0=http://org.apache.synapse/xsd&amp;prefix1=ns3&amp;uri1=http://org.apache.synapse/xsd</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://mgt.esb.wso2.org/carbon/sequences/design_sequence.jsp?sequenceAction=add</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="X-Requested-With" elementType="Header">
+                      <stringProp name="Header.name">X-Requested-With</stringProp>
+                      <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                    </elementProp>
+                    <elementProp name="Content-Type" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">*/*</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - mediator-update-ajaxprocessor.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="mediaType" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">mediaType</stringProp>
+                      <stringProp name="Argument.value">xml</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="pfFormat" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">pfFormat</stringProp>
+                      <stringProp name="Argument.value">inline</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="payloadFactory.format" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                      <stringProp name="Argument.name">payloadFactory.format</stringProp>
+                      <stringProp name="Argument.value">&lt;ns:welcomePersonResponse xmlns:ns=&quot;http://test.wso2.org&quot;&gt;
+   &lt;ns:returns&gt;$1, $2 $3 &lt;/ns:returns&gt;
+&lt;/ns:welcomePersonResponse&gt;</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="registryKey" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">registryKey</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="argCount" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">argCount</stringProp>
+                      <stringProp name="Argument.value">4</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="argType1" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">argType1</stringProp>
+                      <stringProp name="Argument.value">expression</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="payloadFactory.argEval1" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">payloadFactory.argEval1</stringProp>
+                      <stringProp name="Argument.value">xml</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="payloadFactory.argDeepCheck1" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">payloadFactory.argDeepCheck1</stringProp>
+                      <stringProp name="Argument.value">true</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="payloadFactory.argValue1" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                      <stringProp name="Argument.name">payloadFactory.argValue1</stringProp>
+                      <stringProp name="Argument.value">//mo:return</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="argType2" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">argType2</stringProp>
+                      <stringProp name="Argument.value">expression</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="payloadFactory.argEval2" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">payloadFactory.argEval2</stringProp>
+                      <stringProp name="Argument.value">xml</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="payloadFactory.argDeepCheck2" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">payloadFactory.argDeepCheck2</stringProp>
+                      <stringProp name="Argument.value">true</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="payloadFactory.argValue2" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                      <stringProp name="Argument.name">payloadFactory.argValue2</stringProp>
+                      <stringProp name="Argument.value">get-property(&apos;ESB490_TextEntry&apos;)</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="argType3" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">argType3</stringProp>
+                      <stringProp name="Argument.value">value</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="payloadFactory.argEval3" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">payloadFactory.argEval3</stringProp>
+                      <stringProp name="Argument.value">xml</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="payloadFactory.argDeepCheck3" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">payloadFactory.argDeepCheck3</stringProp>
+                      <stringProp name="Argument.value">true</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="payloadFactory.argValue3" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">payloadFactory.argValue3</stringProp>
+                      <stringProp name="Argument.value">ESB</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="mediatorID" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">mediatorID</stringProp>
+                      <stringProp name="Argument.value">mediator-1</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="updatePage" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                      <stringProp name="Argument.name">updatePage</stringProp>
+                      <stringProp name="Argument.value">../payloadfactory-mediator/update-mediator.jsp</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="random" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">random</stringProp>
+                      <stringProp name="Argument.value">0.16819586078683357</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                      <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    </elementProp>
+                    <elementProp name="followupAction" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">followupAction</stringProp>
+                      <stringProp name="Argument.value">source</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding">ISO-8859-1</stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/sequences/mediator-update-ajaxprocessor.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://mgt.esb.wso2.org/carbon/sequences/design_sequence.jsp?sequenceAction=add</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="X-Requested-With" elementType="Header">
+                      <stringProp name="Header.name">X-Requested-With</stringProp>
+                      <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">*/*</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - design_sequence-ajaxprocessor.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="position" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">position</stringProp>
+                      <stringProp name="Argument.value">mediator-00</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="mediatorName" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">mediatorName</stringProp>
+                      <stringProp name="Argument.value">send</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="type" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">type</stringProp>
+                      <stringProp name="Argument.value">child</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="sequenceName" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">sequenceName</stringProp>
+                      <stringProp name="Argument.value">${SequenceName}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="onErrorKey" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">onErrorKey</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="mediatorAction" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">mediatorAction</stringProp>
+                      <stringProp name="Argument.value">add</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding">ISO-8859-1</stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/sequences/design_sequence-ajaxprocessor.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://mgt.esb.wso2.org/carbon/sequences/design_sequence.jsp?sequenceAction=add</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="X-Requested-With" elementType="Header">
+                      <stringProp name="Header.name">X-Requested-With</stringProp>
+                      <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">text/html, */*; q=0.01</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - mediator-edit-ajaxprocessor.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="mediatorID" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">mediatorID</stringProp>
+                      <stringProp name="Argument.value">mediator-2</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding">ISO-8859-1</stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/sequences/mediator-edit-ajaxprocessor.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://mgt.esb.wso2.org/carbon/sequences/design_sequence.jsp?sequenceAction=add</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="X-Requested-With" elementType="Header">
+                      <stringProp name="Header.name">X-Requested-With</stringProp>
+                      <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">text/html, */*; q=0.01</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence -  mediator-update-ajaxprocessor.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="epOp" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">epOp</stringProp>
+                      <stringProp name="Argument.value">none</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="registryKey" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">registryKey</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="mediator.send.xpath_val" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">mediator.send.xpath_val</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="keygroup" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">keygroup</stringProp>
+                      <stringProp name="Argument.value">DefaultKey</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="mediator.send.key.static_val" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">mediator.send.key.static_val</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="mediator.send.key.dynamic_val" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">mediator.send.key.dynamic_val</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="build.message" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">build.message</stringProp>
+                      <stringProp name="Argument.value">false</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="mediatorID" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">mediatorID</stringProp>
+                      <stringProp name="Argument.value">mediator-2</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="updatePage" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                      <stringProp name="Argument.name">updatePage</stringProp>
+                      <stringProp name="Argument.value">../send-mediator/update-mediator.jsp</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="random" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">random</stringProp>
+                      <stringProp name="Argument.value">0.23489994937951386</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="followupAction" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">followupAction</stringProp>
+                      <stringProp name="Argument.value">source</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding">ISO-8859-1</stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/sequences/mediator-update-ajaxprocessor.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://mgt.esb.wso2.org/carbon/sequences/design_sequence.jsp?sequenceAction=add</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="X-Requested-With" elementType="Header">
+                      <stringProp name="Header.name">X-Requested-With</stringProp>
+                      <stringProp name="Header.value">XMLHttpRequest</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">*/*</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - save_sequence.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="sequenceName" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">sequenceName</stringProp>
+                      <stringProp name="Argument.value">${SequenceName}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="onErrorKey" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">onErrorKey</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                    <elementProp name="seqDescription" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">seqDescription</stringProp>
+                      <stringProp name="Argument.value"></stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/sequences/save_sequence.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://mgt.esb.wso2.org/carbon/sequences/design_sequence.jsp?sequenceAction=add</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom Proxy - Sequence - list_sequences.jsp" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="tab" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">tab</stringProp>
+                      <stringProp name="Argument.value">0</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${mgt_host}</stringProp>
+                <stringProp name="HTTPSampler.port">${mgt_https_port}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+                <stringProp name="HTTPSampler.path">/carbon/sequences/list_sequences.jsp</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="Referer" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">https://mgt.esb.wso2.org/carbon/sequences/save_sequence.jsp?sequenceName=ESB490test&amp;onErrorKey=&amp;seqDescription=</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Language" elementType="Header">
+                      <stringProp name="Header.name">Accept-Language</stringProp>
+                      <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept-Encoding" elementType="Header">
+                      <stringProp name="Header.name">Accept-Encoding</stringProp>
+                      <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                    </elementProp>
+                    <elementProp name="User-Agent" elementType="Header">
+                      <stringProp name="Header.name">User-Agent</stringProp>
+                      <stringProp name="Header.value">Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
                 <hashTree/>
               </hashTree>
             </hashTree>
