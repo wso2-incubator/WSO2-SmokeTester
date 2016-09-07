@@ -74,7 +74,7 @@ module.exports = function (grunt) {
     },
     shell: {
       visual_spec: {
-        command: './run.sh',
+        command: './smoke.sh',
         options: {
           stdout: true,
           failOnError: true,

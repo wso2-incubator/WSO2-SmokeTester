@@ -2,6 +2,7 @@
 
 source resources/configs/application.properties
 
+# logging function which handles all the logging related tasks
 function log() {
 	RED='\033[0;31m' # Red Color
 	BLUE='\033[0;34m' # Blue Color
@@ -20,7 +21,7 @@ function log() {
         fi
 }
 
-
+# Check variables are set before running the script
 function check_variables() {
 	# Verify JMETER_HOME
 	if [ "$JMETER_HOME" == "" ];then
@@ -35,6 +36,9 @@ function check_variables() {
 	log "INFO" "ARTEFACT LOCATION : $ARTEFACT_LOCATION" 
 }
 
+# function to clean the setup when starting a test
+# need to update application.properties
+#	CLEAN_TARGET={true/false}
 function clean_setup() {
 	# Cleaning OLD Results and other content
 	if [ "$CLEAN_TARGET" = true ]; then
@@ -43,6 +47,7 @@ function clean_setup() {
 	fi
 }
 
+# Function to create the environment for testing.
 function setup_testruner() {
 
 	log "INFO" "Setting up test environment"
@@ -63,21 +68,25 @@ function setup_testruner() {
 	javac -d $REPORT_LOCATION/javaclasses resources/clients/HTMLReportGenerator.java
 }
 
+# Function to call HTMLReportGenerator class for report generation
 function generate_report() {
 	log "INFO" "Generating reports..."
 	java -cp $REPORT_LOCATION/javaclasses HTMLReportGenerator $1 $2
 }
 
+# Help Message TODO
 function help_message() {
 	echo "There is NO HELP for you..."
 	exit
 }
 
+# List all available scripts
 function list_scripts() {
 	tree -d test-suites/$1/$2/ | grep -v CApp | grep -v BackendServices
 	exit
 }
 
+# Function to copy all third-party libraries to the Jmeter instance.
 function copy_3rdparty_libs() {
 	if [ "$JMETER_HOME" != "" ];then
 		log "WARNING" "The script will update your Jmeter instance!"
@@ -90,10 +99,12 @@ function copy_3rdparty_libs() {
 	fi
 }
 
+# Function to copy all jmx artefacts to the test location
 function get_jmx() {
 	cp `find $ARTEFACT_LOCATION/$1/$2/ -iname "*jmx" -exec echo {} \;` $REPORT_LOCATION/runtime/scripts/
 }
 
+# Function to copy all .car/.zip artefacts to the test location
 function get_artefacts() {
 	if [[ `find $ARTEFACT_LOCATION/$1/$2/ -iname "*car" -exec echo {} \;` ]]; then
 		cp `find $ARTEFACT_LOCATION/$1/$2/ -iname "*car" -exec echo {} \;` $REPORT_LOCATION/runtime/scripts/
@@ -104,6 +115,7 @@ function get_artefacts() {
 	fi
 }
 
+# Function to copy artefacts for a single test run
 function get_singlerun() {
 	FILE_LOCATION=`find test-suites/$1/$2/ -iname "$3" -exec echo {} \;`
 	if [[ $FILE_LOCATION ]]; then
@@ -124,6 +136,7 @@ function get_singlerun() {
 	fi
 }
 
+# Function that actually runs the tests :)
 function run_tests() {
 	log "INFO" "Starting Tests"
 
@@ -135,7 +148,7 @@ function run_tests() {
 	log "INFO" "Test run completed"
 }
 
-# Main function
+# The Main function
 while echo $1 | grep ^- > /dev/null; do
 	eval $( echo $1 | sed 's/-//g' | tr -d '\012')=$2
 	shift
