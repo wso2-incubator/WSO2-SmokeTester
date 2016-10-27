@@ -52,3 +52,10 @@ Following logs and reports will be Created after executing the tool.
 - Test Result Logs
 - Jmeter Logs
 - HTML Report
+
+# Tested Environments
+
+The tool was tested in the following environments. If there are any issues regarding the tool please report them in https://github.com/wso2-incubator/qa-tooling-smoketester/issues
+
+- Ubuntu
+- Fedora

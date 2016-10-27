@@ -69,7 +69,18 @@ function generate_report() {
 }
 
 function help_message() {
-	echo "There is NO HELP for you..."
+	echo "$APP_NAME $APP_VERSION"
+	echo ""
+	echo "Usage: "
+	echo "Listing available scripts"
+	echo "list all: ./run.sh list"
+	echo "list product: ./run.sh list [PRODUCT NAME] [PRODUCT VERSION]"
+	echo ""
+	echo "Running a single script"
+	echo "./run.sh -p [PRODUCT NAME] -v [PRODUCT VERSION] -s [SCRIPT NAME]"
+	echo ""
+	echo "Running a all scripts in a product"
+	echo "./run.sh -p [PRODUCT NAME] -v [PRODUCT VERSION]"
 	exit
 }
 
@@ -80,7 +91,7 @@ function list_scripts() {
 
 function copy_3rdparty_libs() {
 	if [ "$JMETER_HOME" != "" ];then
-		log "WARNING" "The script will update your Jmeter instance!"
+		log "\033[0;31mWARNING\033[0m" "The script will update your Jmeter instance!"
 		if test "$(ls -A "$LIB_LOCATION")"; then
 			log "INFO" "Copying 3rd party libraries into $JMETER_HOME/lib/ext"
 			cp $LIB_LOCATION/* $JMETER_HOME/lib/ext/
@@ -175,9 +186,8 @@ SCRIPT=$s
 
 if [ "$PRODUCT" == "" ] || [ "$VERSION" == "" ]; then
 	log "INFO" "No product or version specified!"
-	log "INFO" "Running default scripts in location [testscripts/scripts]"
-	run_tests testscripts/scripts
-	generate_report "NOT-SPECIFIED" "NOT-SPECIFIED"
+	log "INFO" "You need to try HELP!!!"
+	help_message
 fi
 
 if [ "$PRODUCT" != "" ] && [ "$VERSION" != "" ] && [ "$SCRIPT" == "" ]; then
