@@ -57,5 +57,5 @@ Following logs and reports will be Created after executing the tool.
 
 The tool was tested in the following environments. If there are any issues regarding the tool please report them in https://github.com/wso2-incubator/qa-tooling-smoketester/issues
 
-- Ubuntu
-- Fedora
+- Ubuntu 14.04
+- Fedora 23

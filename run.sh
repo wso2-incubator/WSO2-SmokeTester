@@ -81,6 +81,9 @@ function help_message() {
 	echo ""
 	echo "Running a all scripts in a product"
 	echo "./run.sh -p [PRODUCT NAME] -v [PRODUCT VERSION]"
+	echo ""
+	echo "Cleanup the last execution"
+	echo "./run.sh clean"
 	exit
 }
 
