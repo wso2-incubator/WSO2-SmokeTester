@@ -1,0 +1,12 @@
+user64@carbon.super,password,consumerkey6,consumersecret6
+second22/user64@carbon.super,password,consumerkey6,consumersecret6
+user64@gmail.com@carbon.super,password,consumerkey6,consumersecret6
+second22/user64@gmail.com@carbon.super,password,consumerkey6,consumersecret6
+user6@tenant66.com,password,consumerkey100,consumersecret100
+second66/user6@tenant66.com,password,consumerkey100,consumersecret100
+user6@gmail.com@tenant66.com,password,consumerkey100,consumersecret100
+second66/user6@gmail.com@tenant66.com,password,consumerkey100,consumersecret100
+user94@tenant18.com,password,consumerkey77,consumersecret77
+second18/user94@tenant18.com,password,consumerkey77,consumersecret77
+user94@gmail.com@tenant18.com,password,consumerkey77,consumersecret77
+second18/user94@gmail.com@tenant18.com,password,consumerkey77,consumersecret77
